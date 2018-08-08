@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles/index.css" />
+	<link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="lightBox/lightbox.css" />
+    <script src="lightBox/array.js" type="text/javascript"></script>
+    <script src="lightBox/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="lightBox/lightbox.js" type="text/javascript"></script>
+	<title>LightBox</title>
+</head>
+<body>
+    <main>
+        <div class="navBar" id="navBar">
+            <a href="index.html" class="button bgreen">LightBox
+            </a>
+            <a href="followMe/followMe.html" class="button borange">Follow Me
+            </a>
+        </div>
+   
+    <div class="grid">
+<table>
+    <caption>Most Beautiful Places in the World</caption>
+<tbody>
+    <tr>
+    <td>
+      
+       <div class="container">
+    <div class="textBox" id="textBox">
+        <header id="headerInfo"></header>
+        <section id="descInfo"></section>
+    </div>    
+	<div  id="pictures">
+		<img src="images/arizona.jpg" class="pictures" id="arizona" />
+		<img src="images/iceland.jpg" class="pictures" id="iceland" />
+		<img src="images/czech.jpg" class="pictures" id="czech" />
+		<img src="images/ashikaga.jpg" class="pictures" id="ashikaga" />	
+		<img src="images/greece.jpg" class="pictures" id="greece" />
+		<img src="images/japan.jpg" class="pictures" id="japan" />
+		<img src="images/myanmar.jpg" class="pictures" id="myanmar" />
+        <img src="images/namaqualand.jpg" class="pictures" id="namaqualand" />
+		<img src="images/namibia.jpg" class="pictures" id="namibia" />
+        <img src="images/bay-vietnam.jpg" class="pictures" id="bay-vietnam" />
+        <img src="images/waitomo.jpg" class="pictures" id="waitomo" />
+		<img src="images/noronha.jpg" class="pictures" id="noronha" />
+		<img src="images/utah.jpg" class="pictures" id="utah" />
+		<img src="images/vietnam.jpg" class="pictures" id="vietnam" />
+		<img src="images/zhangjiajie.jpg" class="pictures" id="zhangjiajie" />
+		<img src="images/france.jpg" class="pictures" id="france" />
+	</div>
+</div>
+<tbody class="popUp"> 
+<div class="show">     
+    <div class="overlay"><!-- backgrounds rgba color -->  </div>
+    <div class="wrapper" id="wrapper">     
+        <div class="imgShow" id="imgShow"> 
+            <!-- image`s top header-->
+            <div class="header" id="header">
+                <div class="closeButton" id="closeButton" type="button"></div>  
+                <div class="resizeButton" id="resizeButton" type="button"></div>
+            </div>
+        <div class="leftButton" id="leftButton"></div>
+            <!-- img and all that should be shown -->
+            <div class="onlyImg" id="onlyImg">            
+                <!--img which should get src of opend img--> 
+                <img src="" id="openedImg" class="openedImg">   
+            </div>
+            <div class="rightButton" id="rightButton"></div>
+        </div>
+    </div>
+    </div> 
+</tbody>     
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+         </main>
+</body>
+</html>

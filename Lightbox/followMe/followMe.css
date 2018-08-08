@@ -1,0 +1,363 @@
+@font-face {
+	font-family: courgette;
+	src: url(../fonts/courgette.ttf);
+}
+@font-face {
+	font-family: new;
+	src: url(../fonts/new.ttf);
+}
+@font-face {
+	font-family: satisfy;
+	src: url(../fonts/satisfy.ttf);
+}
+* {
+    text-decoration: none;
+	padding: 0;
+	border-collapse: collapse;	
+	margin: 0;
+}
+html, body, main {
+	height: 100%;
+}
+body {
+    overflow: hidden;
+    background-color: #eedcd5;
+    color: #333;
+    font-family: courgette;
+    font-size: 16px;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    display: flex;
+}
+#navBar{
+    margin-top: 100px;
+    display: inline-block;
+    width: 40%;
+    z-index: 9999;
+}
+.button:after {
+    background: #eedcd5;
+}
+.bgreen, .bgreen:before {
+    background: rgba(73,155,234,1);
+    background: -moz-linear-gradient(45deg, rgba(73,155,234,1) 0%, rgba(26,188,156,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(73,155,234,1)), color-stop(100%, rgba(26,188,156,1)));
+    background: -webkit-linear-gradient(45deg, rgba(73,155,234,1) 0%, rgba(26,188,156,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(73,155,234,1) 0%, rgba(26,188,156,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(73,155,234,1) 0%, rgba(26,188,156,1) 100%);
+    background: linear-gradient(45deg, rgba(73,155,234,1) 0%, rgba(26,188,156,1) 100%);
+}
+.borange, .borange:before {
+    background: rgba(255,193,7,1);
+    background: -moz-linear-gradient(45deg, rgba(255,193,7,1) 0%, rgba(255,87,34,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(255,193,7,1)), color-stop(100%, rgba(255,87,34,1)));
+    background: -webkit-linear-gradient(45deg, rgba(255,193,7,1) 0%, rgba(255,87,34,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(255,193,7,1) 0%, rgba(255,87,34,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(255,193,7,1) 0%, rgba(255,87,34,1) 100%);
+    background: linear-gradient(45deg, rgba(255,193,7,1) 0%, rgba(255,87,34,1) 100%);
+}
+.button {
+    font-family: new;
+    text-align: center;
+    display: block;
+    position: relative;
+    margin: 0 0 10px 0;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: bolder;
+    transition: all .5s;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.button:hover {
+    text-shadow: 0px 0px 0px rgba(255, 255, 255, .75);
+}
+.button:hover:after {
+    left: 100%;
+    top: 100%;
+    bottom: 100%;
+    right: 100%;
+}
+.button:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    transition: all .5s;
+}
+.button:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    bottom: 2px;
+    right: 2px;
+    z-index: -1;
+    transition: all .5s;
+}
+.amp {
+    font-style:italic;
+    font-weight:normal;
+    border: none;
+}
+figure.polaroid {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 10px 20px 10px;
+    width: 150px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    z-index: 2;
+    font-size: 0.7em;
+    -webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+    -moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+    box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+}
+figure.polaroid:hover,
+figure.polaroid:focus,
+figure.polaroid:active {
+    z-index: 999;
+    border-color: #6A6A6A;
+    -webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+    -moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+    box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+figure img {
+    border: none;
+    display: block;
+    margin: 0 0 15px;
+    width: 150px;
+    height: 150px;
+}
+.photo-album {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 70em;
+    height: 450px;
+    margin-top: 5em;
+    display: inline-block;
+    min-width: 800px;
+    max-width: 900px;
+}
+.photo-album .polaroid {
+    position: absolute;
+}
+.photo-album .small {
+    width: 85px;
+    padding: 6px 6px 12px 6px;
+    font-size: 0.6em;
+}
+.photo-album .small img {
+    width: 85px;
+    height: 85px;
+}
+.photo-album .medium {
+    width: 200px;
+    padding: 13px 13px 26px 13px;
+    font-size: 0.8em;
+}
+.photo-album .medium img {
+    width: 200px;
+    height: 200px;
+}
+.photo-album .large {
+    width: 300px;
+    padding: 20px 20px 30px 20px;
+    font-size: 1em;
+}
+.photo-album .large img {
+    width: 300px;
+    height: 300px;
+}
+.photo-album .img1 {
+    bottom: 10px;
+    right: 365px;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    transform: rotate(10deg);
+    animation-name: rotate;
+    animation-duration: 1.5s;
+}
+.photo-album .img2 {
+    top: 50px;
+    right: 20px;
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+    animation-name: rotate;
+    animation-duration: 2s;
+}
+.photo-album .img3 {
+    left: 400px;
+    top: 0;
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    animation-name: rotate;
+    animation-duration: 2.5s;
+}
+.photo-album .img4 {
+    top: 10px;
+    left: 495px;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    animation-name: rotate;
+    animation-duration: 3s;
+}
+.photo-album .img5 {
+    bottom: 0;
+    right: 0;
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    transform: rotate(1deg);
+    animation-name: rotate;
+    animation-duration: 3.5s;
+}
+.photo-album .img6 {
+    bottom: 10px;
+    right: 156px;
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    transform: rotate(6deg);
+    animation-name: rotate;
+    animation-duration: 4s;
+}
+.photo-album .img7 {
+    bottom:0;
+    left:400px;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    animation-name: rotate;
+    animation-duration: 4.5s;
+}
+.photo-album .img8 {
+    bottom: -20px;
+    left: 700px;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+    animation-name: rotate;
+    animation-duration: 5s;
+}
+.photo-album .img9 {
+    bottom: 0;
+    left: 0;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+    animation-name: rotate;
+    animation-duration: 5.5s;
+}
+.photo-album .img10 {
+    top: 0;
+    left: 20px;
+    -webkit-transform: rotate(8deg);
+    -moz-transform: rotate(8deg);
+    transform: rotate(8deg);
+    animation-name: rotate;
+    animation-duration: 6s;
+}
+.photo-album .img11 {
+    top: 0;
+    right: 0;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+    animation-name: rotate;
+    animation-duration: 6.5s;
+}
+.photo-album .img12 {
+    top: 0;
+    left: 680px;
+    -webkit-transform: rotate(18deg);
+    -moz-transform: rotate(18deg);
+    transform: rotate(18deg);
+    animation-name: rotate;
+    animation-duration: 7s;
+}
+.photo-album .img13 {
+    bottom: -20px;
+    right: 630px;
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    transform: rotate(4deg);
+    animation-name: rotate;
+    animation-duration: 7.5s;
+}
+.photo-album .img14 {
+    top: 90px;
+    left: 430px;
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    transform: rotate(15deg);
+    animation-name: rotate;
+    animation-duration: 8s;
+}
+.photo-album .img15 {
+    left:176px;
+    top:20px;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+    animation-name: rotate;
+    animation-duration: 8.5s;
+}
+
+figure:hover,
+figure:focus {
+    z-index: 5;
+}
+@keyframes rotate {
+0% {
+    opacity: 0;
+    transform: rotate(0deg) scale(6);
+}
+70% {
+    opacity: 0;
+    transform: rotate(180deg) scale(6);
+}
+100% {
+    opacity: 1;
+    transform: rotate(2deg) scale(1);
+}
+}
+p {
+    color: #1f3444;
+    font-weight: 600;
+    font-size: 20px;
+    width: 20%;
+    font-family: satisfy;
+    padding-right: 40px;
+    padding-top: 20px;
+    text-align: right;
+}
+p::first-letter {
+    display: inline-block;
+    font-size: xx-large;
+    font-family: satisfy;
+}
+p::first-line {
+    color: #e4963a;
+    font-family: courgette;
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}

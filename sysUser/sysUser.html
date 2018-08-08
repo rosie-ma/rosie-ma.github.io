@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<link rel="stylesheet" type="text/css" href="styles/sisUser.css" />
+    <link rel="icon" type="image/x-icon" href="image/favicon.png" />
+    <script src="styles/gridView.js" type="text/javascript"></script>
+    <script src="styles/userModel.js" type="text/javascript"></script>
+    <script src="styles/userGridScheme.js" type="text/javascript"></script>
+    <script src="styles/dimLayer.js" type="text/javascript"></script>
+    <script src="styles/popUp.js" type="text/javascript"></script>
+    <script src="styles/sysUser.Form.js" type="text/javascript"></script>
+	<script src="styles/array.js" type="text/javascript"></script>  
+	<title>SysUser</title>
+</head>  
+<body>
+<main> 
+</main>
+<script> 
+//user model collection
+User.insertAll([
+        new User({
+            id: 1, 
+            firstName: 'Ernest', 
+            lastName: 'Bridger',
+            age: 25}),
+        new User({
+            id: 2, 
+            firstName: 'Evelynn',
+            lastName: 'Waite',
+            age: 22}),
+        new User({
+            id: 3, 
+            firstName: 'Kaitlyn',
+            lastName: 'Fauntleroy',
+            age: 19}),
+        new User({
+            id: 4, 
+            firstName: 'Allan',
+            lastName: 'Macky',
+            age: 100})
+    ]);
+  
+    User.selectAll();
+    var main = document.getElementsByTagName('main')[0], 
+        $popup = new Popup({
+            parent: main,
+            $contentForm: $form
+        }),
+        
+        $grid = new GridView({
+            parent: main,
+            model: User,
+            scheme: userGridScheme,
+            $popup: $popup
+        });
+    
+    var $mainTable = document.getElementsByClassName('firstTd')[0],
+        $form  = new SysUserForm({ parent: $mainTable, data: source });
+    var $form = document.createElement('form');
+</script>
+</body>
+</html>

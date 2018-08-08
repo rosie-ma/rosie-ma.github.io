@@ -1,0 +1,279 @@
+@font-face {
+    font-family: plexSerif;
+    src: url(../font/plexSerif.ttf);
+}
+@font-face {
+    font-family: josefinSans;
+    src: url(../font/josefinSans.ttf);
+}
+@font-face {
+    font-family: courgette;
+    src: url(../font/courgette.ttf);
+}
+@font-face {
+    font-family: new;
+    src: url(../font/new.ttf);
+}
+@font-face {
+    font-family: satisfy;
+    src: url(../font/satisfy.ttf);
+}
+* {  
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+    border-collapse: collapse;
+    user-select: none;
+}
+html {
+	height: 100%;
+}
+body {
+    background-image: linear-gradient(  to left bottom, #00a267, #007b78, #00536e, #002c48, #0b051a);
+/*    background: #252934;*/
+    height: 100%;
+}
+/*first popUp*/
+main {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    user-select: none;
+}
+#gridTable {
+    position: absolute;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 425px;
+    margin: 20px 0px 0px 70px;
+    box-shadow: 3px 3px 26px #E0F7FA;
+    font-family: josefinSans;
+    border: 1px solid #98fffe;
+}
+.registCaption {
+    padding: 5px;
+    color: #d1ec69;
+    font-family: courgette;
+    font-size: 200%;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0px 0px 2px #000000;
+}
+#gridTable > thead > tr > td {
+    display: inline-block;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: plexSerif;
+    background-color: #ffffff42;
+    border: 1px solid #98fffe;
+    color: #cae2e2;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+/*    vertical-align: middle;*/
+    padding: 15px 0px 15px 0px;
+    box-sizing: border-box;
+}
+#gridTable > tbody > tr > td {
+    display: inline-block;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: new;
+    background-color: #ffffff1c;
+    text-align: center;
+    font-size: 17px;
+    color: #cae2e2;
+    padding: 15px 0px 15px 0px;
+    border: 1px solid #98fffe;
+    box-sizing: border-box;
+}
+#gridTable thead > tr > td:nth-of-type(1), #gridTable tbody > tr > td:nth-of-type(1) {
+    width: 14%;
+}
+#gridTable thead > tr > td:nth-of-type(2), #gridTable tbody > tr > td:nth-of-type(2) {
+    width: 30%;
+}
+#gridTable thead > tr > td:nth-of-type(3), #gridTable tbody > tr > td:nth-of-type(3) {
+    width: 40%;
+}
+#gridTable thead > tr > td:nth-of-type(4), #gridTable tbody > tr > td:nth-of-type(4) {
+    width: 16%;
+}
+/*
+#gridTable thead > tr > td:nth-of-type(5), #gridTable tbody > tr > td:nth-of-type(5) {
+    width: 14%;
+}
+*/
+#gridTable thead > tr > td:nth-of-type(6), #gridTable tbody > tr > td:nth-of-type(6) {
+    padding: 5px 0px 3px 0px;
+}
+#gridTable tr:hover {
+    background-color: #ffffff42;
+}
+#gridTable tbody > tr > #editCell, #gridTable tbody > tr > #deleteCell {
+   padding: 4px 0px 4px 0px;
+}
+#editBtn, #deleteBtn {
+    height: 38px;
+    width: 39px;
+    cursor: pointer;
+}
+
+/*second opend popUp for changing info*/
+
+.dimlayer {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    z-index: 3;
+    background-color: #c7c8c880;
+}
+/*all table*/
+.mainTable {
+    margin: 4% 22%;
+    width: 684px;
+    height: 538px;
+    position: absolute;
+    color: #c3ebfd;
+    background-color: #2a2e38f5;
+    box-shadow: 2px 1px 20px #021310;
+    font-family: josefinSans;
+    background-size: cover;
+    z-index: 5;
+}
+.mainTable #mainThead {
+    float: right;
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid #d1ec69;
+    color: #04BEBD;
+    font-family: satisfy;
+    font-size: 210%;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+.mainTable #closeBtn {
+    height: 35px;
+    width: 35px;
+    padding: 5px 5px 0 0;
+    float: right;
+    cursor: pointer;
+}
+/*captions inside the table*/
+.theadFirst, .theadSecond {
+    font-family: josefinSans;
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+}
+/*two separate tables and staff inside them*/
+.tableFirst, .tableSecond {
+    height: 345px;
+}
+.mainTable th {
+    vertical-align: middle;
+    font-weight: 500;
+    text-align: right;
+    padding: 10px 0px 10px 10px;
+}
+.mainTable td {
+    width: 10%;
+    padding: 10px 16px 10px 19px;
+}
+.mainTable textarea {
+    resize: none;
+}
+input, select, textarea {   
+    padding: 6px;
+    font-family: new;
+    color: #c1c7ca;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #d1ec69;
+}
+::placeholder {
+    color: #c1c7ca;
+}
+textarea:focus, input:focus, select:focus {
+    outline: none;
+}
+/*user icon`s image parrt*/
+.mainTable figure {
+    width: 75px;
+    height: 80px;
+    margin-left: -86px;
+    margin-top: -252px;
+}
+.mainTable #openedImage {
+    width: 75px;
+    height: 80px;
+}
+/*buttons at the bottom*/
+.mainTable tfoot {
+    position: relative;
+}
+.mainTable .buttonUpload {
+    opacity: 0;
+}
+ruby > rt {
+    font-size: 12px;
+    padding: 2px 1px 2px 1px;
+}
+ruby > rb {
+    padding: 2px 1px 2px 1px;
+}
+.buttonUpload, .imageLabel {
+    position: absolute;
+    border-radius: 4px;
+    font-family: courgette;
+    color: #eedac8;
+    padding: 4px;
+    width: 68px;
+    top: 439px;
+    text-align: center;
+    left: 101px;
+    z-index: 99;
+}
+.imageLabel::after {
+    content: url("../image/upload1.png");
+    background-size: cover;
+    
+}
+.imageLabel:hover::after {
+    content: url("../image/upload.png");
+    background-size: cover;
+}
+.mainTable .buttonRight {
+    border: none;
+    font-size: 19px;
+    font-family: courgette;
+    border-radius: 4px;
+    background-color: #04BEBD;
+    float: right;
+    margin: 0px 60px 8px -30px;
+    padding: 4px;
+    width: 68px;
+    color: #ffffff;
+}
+.buttonRight:hover {
+    color: #010e15;
+    background-color: #d1ec69;
+}
+/*select which needs to be resized*/
+#age {
+    width: 110px;
+}
+#select {
+    width: 166px;
+}
+#selectCountry, #selectCity, #selectState {
+       width: 165px;
+}
