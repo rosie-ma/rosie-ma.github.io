@@ -1,0 +1,92 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js" type="text/javascript" async="async"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous" async="async">
+    <link rel="icon" type="image/x-icon" href="image/icone.png" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <title>User Info</title>
+</head>
+<body>
+<div class="container">
+<div class="navbar">
+    <div class="infoContainer">
+        <div class="row">
+            <label for="name">Name</label>
+            <input type="text" id="name">
+        </div>
+        <div class="row">
+            <label for="surname">Surname</label>
+            <input type="text" id="surname">
+        </div>
+        <div class="row">
+            <label for="dateField1">Age</label>
+            <div class="dateContainer">
+                <label for="month" class="monthText">Month</label>
+                <input type="number" id="month">
+                <label for="date" class="dayText">Day</label>
+                <input type="number" id="date">
+                <label for="year" class="yearText">Year</label>
+                <input type="number" id="year">
+            </div>
+        </div>
+        <div class="row">
+            <label for="male">Gender</label>
+            <p class="genderText">Male<input type="radio" name="gender" value="male" id="male" class="gender"><br /></p>
+            <p class="genderText">Female<input type="radio" name="gender" value="female" id="female" class="gender"></p>
+        </div>
+        <div class="row">
+            <label for="position">Position</label>
+            <select id="position">
+                <option disabled selected value></option>
+                <option value="junior">junior</option>
+                <option value="senior">senior</option>
+            </select>
+        </div>
+        <div class="row">
+            <label for="salary">Salary</label>
+            <input type="number" id="salary" placeholder="$">
+        </div>
+        <div class="row">
+            <button type="submit" id="submitButton">Submit</button>
+        </div>
+    </div>
+</div>
+<div class="buttonSection">
+<div class="buttonHeader">
+    <div class="userButtonContainer">
+        <h1>Lorem Ipsum</h1>
+        <i class="far fa-user-circle"></i>
+        <i class="far fa-bell"></i>
+    </div>
+    <div class="search">
+        <input class="searchBox" type="search" id="searchBox" placeholder="Search..." onkeyup="FilterFunction()">
+        <label id="searchImg" class="searchLabel" for="searchBox" ><i class="fa fa-search"></i>
+        </label>
+    </div>
+</div>
+</div>    
+<section class="content">
+</section>
+<div id="pagination">
+    <div class="paginationContainer">
+            <button class="page">1</button>
+            <button class="page">2</button>
+            <button class="page">3</button>
+            <button class="page">4</button>
+            <button class="page">5</button>
+            <button class="page">6</button>
+            <button class="page">7</button>
+    </div>
+</div>
+</div> 
+<section class="modal" id="modal">
+    <span class="modalClose" id="modalClose"><i class="fas fa-times"></i></span>
+    <h1>Attention</h1>
+    <p>It seems like you missed some fields...<br />
+Please go back and fill all fields to see the result...</p>
+</section>   
+</body>
+</html>
