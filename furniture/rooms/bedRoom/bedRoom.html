@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../1styles/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="bedRoom.css" />
+    <link rel="icon" type="image/x-icon" href="../../1styles/image/logoImg.png" />
+    <title>Harry G. Furniture</title>
+</head>
+<body>
+ <!-- The Modal -->
+<div id="myModal1" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span id="close1">&times;</span>
+    <h1>DESIGN</h1>
+      <p>
+        The first design ideas are developed through hand sketches, mood boards, 3D renderings, colour sketches and watercolours.<br />
+        A design consultation is an opportunity to explore how you can turn your ideas into a reality. Whatever you want for your home, our skilled design consultants have the knowledge to make it happen, creating a solution that’s perfect for you and your lifestyle. The consultation is time to think big, explore the possibilities and define exactly what you want, in the comfort of your own home.
+        We can work with photographs, technical drawings and renderings of your intended space; however, most of our clients prefer a personal visit from one of our designers, so we can really get a feel for your vision.<br />
+        Fabrics, materials, budgets and technology will be discussed at this stage. <br />
+        The initial design phase culminates in a presentation of full colour drawings or 3D renderings, along with wood, fabric, leathers or finishes samples.
+
+      </p>
+    </div>
+</div>
+<div id="myModal2" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span id="close2">&times;</span>
+    <h1>CRAFTING</h1>
+    <p>
+        When you are completely happy with the final design, the piece will be put into production with some of the finest artisans in England. Our clients are invited to experience a workshop visit to see their design coming to life during the crafting phase.<br />
+        We will closely work with any third parties involved with the project, such as interior designers, architects, builders or specialist consultants to ensure a smooth transition from the initial design through to delivery and installation.<br />
+        We will oversee delivery to your space and installation, ensuring that your new furniture is correctly and safely situated.<br />
+</p>
+    </div>
+</div>
+<div id="myModal3" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span id="close3">&times;</span>
+    <h1>COMMISSIONING</h1>
+    <p>
+        When you are happy with the initial designs and are ready to proceed, we will officially commission the project. Once commissioned we then provide full, detailed technical CAD drawings to be signed off and confirmed. We can also produce full size templates where required.
+    </p>
+  </div>
+</div>
+<div class="grid-container">
+<nav>
+    <div class="containerLogo">
+        <img alt="logo" class="img-responsive logo"src="../../1styles/image/logo.png" />
+    </div>
+    <div class="navbar" id="navbar">
+        <div class="home menuContent"><a href="../../home.html">Home</a></div>
+        <div class="dropdown menuContent">
+            <button class="dropbtn services">Services</button>
+            <div class="dropdownContent">
+                <a href="#" id="myBtn1" class="dropList">DESIGN</a>
+                <a href="#" id="myBtn2" class="dropList">CRAFTING</a>
+                <a href="#" id="myBtn3"class="dropList">COMMISSIONING</a>
+            </div>
+        </div>
+        <div class="contact menuContent"><a href="../../contactUs/contactUs.html">Contact Us</a></div>
+        <div class="menuContent about"><a href="../../aboutUs/aboutUs.html">About Us</a></div>
+        <div class="downButton">
+            <a href="#" address="true" class="scrollText">Scroll down...</a>
+        </div>
+    </div>
+</nav>
+<section class="slideContainer"></section>
+<p class="roomCaption">BedRoom Furniture</p>
+<aside class="roomContainer">
+<div class="gallery-container">
+     <div class="gallery-item" data-index="1">
+        <img src="image/bedroom7.jpeg"> 
+    </div>
+    <div class="gallery-item" data-index="2">
+        <img src="image/bedroom2.jpg">
+    </div>
+    <div class="gallery-item" data-index="3">
+        <img src="image/bedroom3.jpg">  
+    </div>
+    <div class="gallery-item" data-index="4">
+        <img src="image/bedroom4.jpg">
+    </div>
+    <div class="gallery-item" data-index="5">
+        <img src="image/bedroom8.jpeg">
+    </div>
+    <div class="gallery-item" data-index="6">
+        <img src="image/bedroom6.jpg">  
+    </div>
+    <div class="gallery-item" data-index="7">
+        <img src="image/bedroom1.jpg">
+    </div>
+    <div class="gallery-item" data-index="8">
+        <img src="image/bedroom12.jpg">
+    </div>   
+    <div class="gallery-item" data-index="9">
+        <img src="image/bedroom9.jpg">
+    </div>
+    <div class="gallery-item" data-index="10">
+        <img src="image/bedroom10.jpg">
+    </div>
+    <div class="gallery-item" data-index="11">
+        <img src="image/bedroom11.jpg">
+    </div>
+    <div class="gallery-item" data-index="12">
+        <img src="image/bedroom5.jpg">
+    </div>
+</div>
+</aside>
+<footer>
+<div class="footerFluid">
+        <div class="website">
+            <a><img alt="facebook" class="facebook" src="../../1styles/image/facebook.png" /></a>
+            <a><img alt="twitter" class="twitter" src="../../1styles/image/twitter.png" /></a>
+            <a><img alt="gmail" class="gmail" src="../../1styles/image/gmail.png" /></a>
+        </div>
+        <div></div>
+        <div class="footer-copyright">
+            © 2018 Copyright:
+            <a href="https://www.facebook.com/Rosie.Ma98" class="copyright" target="_blank"> Rosie Manukyan </a>
+        </div>
+</div>
+</footer>
+</div>      
+</body>
+<script>
+ //modals 
+    // Get the modal
+var modal1 = document.getElementById('myModal1');
+var modal2 = document.getElementById('myModal2');
+var modal3 = document.getElementById('myModal3');
+// Get the button that opens the modal
+var btn1 = document.getElementById("myBtn1");
+var btn2 = document.getElementById("myBtn2");
+var btn3 = document.getElementById("myBtn3");
+
+// Get the <span> element that closes the modal
+var span1 = document.getElementById('close1');
+var span2 = document.getElementById('close2');
+var span3 = document.getElementById('close3');
+
+
+// When the user clicks the button, open the modal 
+btn1.onclick = function() {
+    modal1.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span1.onclick = function() {
+    modal1.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal1) {
+        modal1.style.display = "none";
+    }
+}
+
+// When the user clicks the button, open the modal 
+btn2.onclick = function() {
+    modal2.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span2.onclick = function() {
+    modal2.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+}
+
+// When the user clicks the button, open the modal 
+btn3.onclick = function() {
+    modal3.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span3.onclick = function() {
+    modal3.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal3) {
+        modal3.style.display = "none";
+    }
+}
+
+//scroll
+   $(function() {
+    $('.scrollText').click (function() {
+      $('html, body').animate({scrollTop: $('aside').offset().top }, 'slow');
+      return false;
+    });
+  });
+</script>
+<script>
+const galleryItem = document.getElementsByClassName("gallery-item");
+const lightBoxContainer = document.createElement("div");
+const lightBoxContent = document.createElement("div");
+const lightBoxImg = document.createElement("img");
+const lightBoxPrev = document.createElement("div");
+const lightBoxNext = document.createElement("div");
+
+lightBoxContainer.classList.add("lightbox");
+lightBoxContent.classList.add("lightbox-content");
+lightBoxPrev.classList.add("fa", "fa-angle-left", "lightbox-prev");
+lightBoxNext.classList.add("fa", "fa-angle-right", "lightbox-next");
+
+lightBoxContainer.appendChild(lightBoxContent);
+lightBoxContent.appendChild(lightBoxImg);
+lightBoxContent.appendChild(lightBoxPrev);
+lightBoxContent.appendChild(lightBoxNext);
+
+document.body.appendChild(lightBoxContainer);
+
+let index = 1;
+
+function showLightBox(n) {
+    if (n > galleryItem.length) {
+        index = 1;
+    } else if (n < 1) {
+        index = galleryItem.length;
+    }
+    let imageLocation = galleryItem[index-1].children[0].getAttribute("src");
+    lightBoxImg.setAttribute("src", imageLocation);
+}
+
+function currentImage() {
+    lightBoxContainer.style.display = "block";
+
+    let imageIndex = parseInt(this.getAttribute("data-index"));
+    showLightBox(index = imageIndex);
+}
+for (let i = 0; i < galleryItem.length; i++) {
+    galleryItem[i].addEventListener("click", currentImage);
+}
+
+function slideImage(n) {
+    showLightBox(index += n);
+}
+function prevImage() {
+    slideImage(-1);
+}
+function nextImage() {
+    slideImage(1);
+}
+lightBoxPrev.addEventListener("click", prevImage);
+lightBoxNext.addEventListener("click", nextImage);
+
+function closeLightBox() {
+    if (this === event.target) {
+        lightBoxContainer.style.display = "none";
+    }
+}
+lightBoxContainer.addEventListener("click", closeLightBox);
+</script>
+</html>

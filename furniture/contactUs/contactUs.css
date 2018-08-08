@@ -1,0 +1,351 @@
+@font-face {
+    font-family: menu;
+    src: url('../1styles/font/menu.ttf');
+}
+@font-face {
+    font-family: companyName;
+    src: url('../1styles/font/company.ttf');
+}
+@font-face {
+    font-family: slogon;
+    src: url('../1styles/font/slogon.ttf');
+}
+@font-face {
+    font-family: neuton;
+    src: url('../1styles/font/neuton.ttf');
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+html, body, main {
+    height: 100%;
+}
+.grid-container { 
+    display: grid;
+    grid-template-areas: 
+    "section section nav";
+    grid-template-rows: 100% auto auto auto;
+    grid-template-columns: 20% 68%;
+    height: 100%;
+}
+
+nav {
+    grid-column: 3;
+    grid-row: 1;
+    z-index: 1;
+    background-color: #dce775;
+    font-family: menu;
+    font-weight: bolder;
+}
+nav:hover {
+    background-color: #d0dc59;
+}
+.navbar {
+    display: grid;
+    grid-template-areas: 
+    "home"
+    "services"
+    "contact"
+    "about"
+    "downButton";
+    grid-template-rows: 100%;
+    grid-template-columns: 100%;
+    font-size: 1.5vw;
+    grid-row-gap: 15px;
+}
+.home {
+    grid-area: home;
+}
+.services {
+    grid-area: services;
+}
+.contact {
+    grid-area: contact;
+}
+.about {
+    grid-area: about;
+}
+.downButton {
+    grid-area: downButton;
+    grid-row: 25 / 25;
+    text-align: center;
+}
+.scrollText {
+    text-decoration: none;
+    color: #4a403c;
+    font-size: 1vw;
+}
+div#navbar.navbar::before {
+    display: none;
+}
+.menuContent {
+    text-align: center;
+}
+.menuContent > a {
+    text-decoration: none;
+    color: #000;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+    color: #464a23;
+}
+.containerLogo {
+    padding: 6% 12% 15% 11%;
+}
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+.dropbtn {
+    color: #000;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: menu;
+    font-weight: bolder;
+    font-size: 1.5vw;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdownContent {
+    display: none;
+    position: absolute;
+    right: 100%;
+    top: -94%;
+    background-color: #d5e06d;
+    min-width: 134px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,.2);
+    z-index: 1;
+}
+.dropdownContent a {
+    color: #000;
+    padding: 10px 7px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.3vw;
+}
+.dropdownContent a:hover {
+    background-color: #b8c34e;
+    color: #464a23;
+}
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefeeb;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.modal h1 {
+    text-align: center;
+    padding-top: 3%;
+    font-size: 3vw;
+    color: #546E7A;
+    font-family: company cursive;
+}
+.modal p {
+    text-align: justify;
+    padding: 3%;
+    color: #757575;
+    font-family: cursive;
+}
+/* The Close Button */
+#close1, #close2, #close3 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+section {
+    background-color: #484848;
+    grid-area: section;
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    display: grid;
+    grid-template-rows: 10% 100%;
+    grid-template-columns: 4% 100%;
+}
+.map {
+    grid-row: 2;
+    grid-column: 2;
+    width: 80%;
+    height: 80%;
+    box-shadow: 0 0 40px -10px black;
+    background: rgb(240, 240, 240);
+    font-family: slogon;
+    display: grid;
+    grid-template-columns: 32% 68%;
+}
+.mapText {
+    float: left;
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: 70% 30%;
+    border-right: 1px solid #b0bb46;
+}
+.textPart {
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: 20% 45%;
+    padding: 2.5vw 2vw 0vw 2.7vw;
+}
+#map {
+    height: 100%;
+    float: left;
+    grid-column: 2;
+}
+marker {
+    height: 100px;
+    width: 100px;
+}
+.textPart > h1 {
+    padding-bottom: 15px;
+    font-weight: 600;
+    color: rgb(133, 144, 29);
+    font-size: 2.1vw;
+    grid-row: 1;
+}
+.textPart > p {
+    font-size: 1.1vw;
+    margin-bottom: 30px;
+    text-align: left;
+    grid-row: 2;
+}
+.det {
+    font-size: 0.9vw;
+    margin-bottom: 15px;
+}
+.det1{
+    grid-row: 3;
+}
+.det2{
+    grid-row: 4;
+}
+.det3{
+    grid-row: 5;`   
+}
+i {
+    float: left;
+    font-size: 1.2vw;
+    margin: 0 10px 0 0;
+}
+center > div {
+    margin: 2vw 0;
+    padding: 0.5vw 0.5vw;
+    cursor: pointer;
+    background: none;
+    color: #546973;
+    border: 0.17vw solid #848c3a;
+    transition: all 0.3s;
+    border-radius: 8px;
+    outline: 0;
+}
+center > button:hover {
+  border-color: rgb(90, 90, 90);
+  color: rgb(90, 90, 90)
+}
+center > .facebook:after {
+  content: 'F-book';
+  font-family: sans-serif;
+  display: block;
+  font-size: 0.8vw;
+      margin-top: 0.7vw;
+}
+center > .gmail:after {
+  content: 'GMail';
+  font-family: sans-serif;
+  display: block;
+  font-size: 0.8vw;
+      margin-top: 0.7vw;
+    font-weight: normal;
+}
+center > .skype:after {
+  content: 'Skype';
+  font-family: sans-serif;
+  display: block;
+  font-size: 0.8vw;
+      margin-top: 0.7vw;
+}
+center > .twitter:after {
+  content: 'Twitter';
+  font-family: sans-serif;
+  display: block;
+  font-size: 0.8vw;
+      margin-top: 0.7vw;
+}
+@media only screen and (max-width: 720px) {
+  center > button {
+    float: right;
+    margin-top: -75px
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  center > button {
+    float: none;
+    margin-top: 10px
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

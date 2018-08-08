@@ -1,0 +1,370 @@
+@font-face {
+    font-family: menu;
+    src: url('../../1styles/font/menu.ttf');
+}
+@font-face {
+    font-family: companyName;
+    src: url('../../1styles/font/company.ttf');
+}
+@font-face {
+    font-family: slogon;
+    src: url('../../1styles/font/slogon.ttf');
+}
+* {
+    padding: 0;
+    margin: 0;
+        user-select: none;
+}
+html, body, main {
+    height: 100%;
+}
+.grid-container { 
+    display: grid;
+    grid-template-areas: 
+    "section section nav"
+    "roomCaption roomCaption roomCaption"
+    "aside aside aside"
+    "footer footer footer";
+    grid-template-rows: 100% auto auto auto;
+    grid-template-columns: 20% 68%;
+    height: 100%;
+}
+
+nav {
+    grid-column: 3;
+    grid-row: 1;
+    z-index: 1;
+    background-color: #a7bf5280;
+    font-family: menu;
+    font-weight: bolder;
+}
+nav:hover {
+    background-color: #71803d9c;
+}
+.navbar {
+    display: grid;
+    grid-template-areas: 
+    "home"
+    "services"
+    "contact"
+    "about"
+    "downButton";
+    grid-template-rows: 100%;
+    grid-template-columns: 100%;
+    font-size: 1.5vw;
+    grid-row-gap: 15px;
+}
+.home {
+    grid-area: home;
+}
+.services {
+    grid-area: services;
+}
+.contact {
+    grid-area: contact;
+}
+.about {
+    grid-area: about;
+}
+.downButton {
+    grid-area: downButton;
+    grid-row: 25 / 25;
+    text-align: center;
+}
+.scrollText {
+    text-decoration: none;
+    color: #4a403c;
+    font-size: 1vw;
+}
+div#navbar.navbar::before {
+    display: none;
+}
+.menuContent {
+    text-align: center;
+}
+.menuContent > a {
+    text-decoration: none;
+    color: #020605;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+    color: #2f2f2f;
+}
+.containerLogo {
+    padding: 6% 12% 15% 11%;
+}
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+.dropbtn {
+    color: #020605;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: menu;
+    font-weight: bolder;
+    font-size: 1.5vw;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdownContent {
+    display: none;
+    position: absolute;
+    right: 100%;
+    top: -94%;
+    background-color: #a7bf52ba;
+    min-width: 134px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,.2);
+    z-index: 1;
+}
+.dropdownContent a {
+    color: #020605;
+    padding: 10px 7px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.3vw;
+}
+.dropdownContent a:hover {
+    color: #2f2f2f;
+    background-color: #00000036;
+}
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+section {
+    grid-area: section;
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+.slideContainer {
+    display: block;
+    padding: 0;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../../1styles/image/kitchen.jpg");
+    background-size: cover;
+}
+
+.roomCaption {
+    padding: 10px;
+    grid-area: roomCaption;
+    text-align: center;
+    background-color: #efede1;
+    margin: 0;
+    font-size: 2.5vw;
+    color: #374b11;
+    font-weight: bold;
+    font-family: slogon;
+}
+
+aside {
+    height: 100%;
+	grid-area: aside;
+    z-index: 10;
+    background-color: #efede1;
+}
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.gallery-item {
+    flex-basis: 32.7%;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+.gallery-item:hover {
+}
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 400ms ease-out;
+}
+.gallery-item img:hover {
+    transform: scale(1.038);
+}
+.gallery-content {
+    font-size: .8em;
+}
+.lightbox {
+    z-index: 999;
+    position: fixed;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;              
+    overflow: auto;
+    top: 0;
+    left: 0;
+}
+.lightbox-content {
+    position: relative;
+    width: 70%;
+    height: 70%;
+    margin: 5% auto;
+}
+.lightbox-content img {
+    border-radius: 7px;
+    box-shadow: 0 0 3px 0 rgba(225, 225, 225, .25);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 7px;
+    top: 45%;
+    cursor: pointer;
+}
+.lightbox-prev {
+    left: 0;
+}
+.lightbox-next {
+    right: 0;
+}
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    opacity: .8;
+}
+
+@media (max-width: 767px) {
+    .gallery-container {
+        width: 100%;
+    }
+    .gallery-item {
+        flex-basis: 49.80%;
+        margin-bottom: 3px;
+    }
+    .lightbox-content {
+        width: 80%;
+        height: 60%;
+        margin: 15% auto;
+    }
+}
+@media (max-width: 480px) {
+    .gallery-item {
+        flex-basis: 100%;
+        margin-bottom: 1px;
+    }
+    .lightbox-content {
+        width: 90%;
+        margin: 20% auto;
+    }
+}
+footer {
+	background: #707070;
+	grid-area: footer;
+}
+.footerFluid {
+    display: grid;
+    grid-template-columns: 0fr 1fr 2fr;
+}
+.website {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.website > a > img {
+    height: 35px;
+    width: 35px;
+    margin: 10px;
+}
+.footerRow {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-copyright {
+    font-size: 1vw;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 99999; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefeeb;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.modal h1 {
+    text-align: center;
+    padding-top: 3%;
+    font-size: 3vw;
+    color: #546E7A;
+    font-family: company cursive;
+}
+.modal p {
+    text-align: justify;
+    padding: 3%;
+    color: #757575;
+    font-family: cursive;
+}
+/* The Close Button */
+#close1, #close2, #close3 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+/*
+s
+*/
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+/*
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 50%;
+        height: 40vh;
+    }
+        .grid-container {
+            grid-template-rows: 45% 3% 290% 9%;;
+    }
+    .column img {
+        height: 25vh;
+    }
+    .slideContainer {
+              background-size: cover;
+    background-attachment: unset;
+    }
+}
+*/

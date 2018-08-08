@@ -1,0 +1,321 @@
+@font-face {
+    font-family: menu;
+    src: url('../1styles/font/menu.ttf');
+}
+@font-face {
+    font-family: companyName;
+    src: url('../1styles/font/company.ttf');
+}
+@font-face {
+    font-family: slogon;
+    src: url('../1styles/font/slogon.ttf');
+}
+@font-face {
+    font-family: neuton;
+    src: url('../1styles/font/neuton.ttf');
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+html, body, main {
+    height: 100%;
+}
+.grid-container { 
+    display: grid;
+    grid-template-areas: 
+    "section section nav"
+    "line line line"
+    "staff staff staff";
+    grid-template-rows: 160% 1.5% 80%;
+    grid-template-columns: 20% 68%;
+    height: 100%;
+}
+nav {
+    grid-column: 3;
+    grid-row: 1;
+    z-index: 1;
+    background-color: #aa92a6b8;
+    font-family: menu;
+    font-weight: bolder;
+}
+nav:hover {
+    background-color: #916f8bb8;
+}
+.navbar {
+    display: grid;
+    grid-template-areas: 
+    "home"
+    "services"
+    "contact"
+    "about"
+    "downButton";
+    grid-template-rows: 100%;
+    grid-template-columns: 100%;
+    font-size: 1.5vw;
+    grid-row-gap: 15px;
+}
+.home {
+    grid-area: home;
+}
+.services {
+    grid-area: services;
+}
+.contact {
+    grid-area: contact;
+}
+.about {
+    grid-area: about;
+}
+.downButton {
+    grid-area: downButton;
+    grid-row: 25 / 25;
+    text-align: center;
+}
+.scrollText {
+    text-decoration: none;
+    color: #4a403c;
+    font-size: 1vw;
+}
+div#navbar.navbar::before {
+    display: none;
+}
+.menuContent {
+    text-align: center;
+}
+.menuContent > a {
+    text-decoration: none;
+    color: #000;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+    color: #000;
+}
+.containerLogo {
+    padding: 6% 12% 15% 11%;
+}
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+.dropbtn {
+    color: #000;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: menu;
+    font-weight: bolder;
+    font-size: 1.5vw;
+}
+.dropdownContent {
+    display: none;
+    position: absolute;
+    right: 100%;
+    top: -94%;
+    background-color: #aa92a6b8;
+    min-width: 134px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,.2);
+    z-index: 1;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdownContent a {
+    color: #000;
+    padding: 10px 7px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.3vw;
+}
+.dropdownContent a:hover {
+    color: #000;
+    background-color: #916f8bb8;
+}
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+.contantContainer {
+    grid-area: section;
+    height: 100%;
+    width: 100%;
+    background-color: #f4ecfb;
+}
+.largeImage, .textBox, .smallImage, .secondTextBox, .longImage {
+    position: absolute;
+}
+.largeImage {
+    top: 8%;
+    height: 62%;
+    z-index: 1;
+    width: 29%;
+    left: 1.5%;
+    background-image: url(image/miniSlide.jpg);
+    background-size: cover;
+    box-shadow: 3px 4px 21px black;
+    transition: all .8s ease-in-out;
+}
+.largeImage:hover {
+    z-index: 5;
+    transform: scale(1.08);
+}
+.textBox {
+    height: 75%;
+    width: 58%;
+    top: 3%;
+    z-index: 1;
+    left: 26%;
+    background-color: #000000d6;
+    box-shadow: 0px 0px 10px black;
+}
+.textCaption {
+    margin: 0;
+    text-align: center;
+    font-family: menu;
+    font-size: 2.3vw;
+    color: #e8dee8;
+    padding: 10px;
+}
+.textInfo {
+    font-size: 1.15vw;
+    padding: 15px 80px 0 80px;
+    font-family: neuton;
+    color: #dedcdecc;
+    text-align: justify;
+}
+.smallImage {
+    top: 55%;
+    height: 44%;
+    z-index: 2;
+    width: 33%;
+    background-image: url(image/bigSlide.jpg);
+    background-size: cover;
+    left: 53%;
+    box-shadow: -4px 6px 23px black;
+    transition: all .8s ease-in-out;
+}
+.smallImage:hover {
+    transform: scale(1.18);
+}
+.secondTextBox {
+    height: 58%;
+    width: 45%;
+    top: 87%;
+    z-index: 1;
+    left: 5%;
+    background-color: #000000d6;
+    box-shadow: 0px 0px 10px black;
+}
+.secondTextInfo {
+    font-size: 1.175vw;
+    padding: 50px 50px 0 50px;
+    font-family: neuton;
+    color: #dedcdecc;
+    text-align: justify;
+}
+.longImage {
+    top: 105%;
+    left: 47%;
+    height: 47%;
+    z-index: 2;
+    width: 22%;
+    background-image: url(image/kitchenImage.jpg);
+    background-size: cover;
+    box-shadow: 6px 6px 22px black;
+    transition: all .8s ease-in-out;
+}
+.longImage:hover {
+    transform: scale(1.2);
+}
+.line {
+    grid-area: line;
+    height: 10px;
+    width: 100%;
+    background-color: #4e243d;
+    
+}
+.staffInfo {
+    grid-area: staff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4ecfb;
+}
+.personImg {
+    height: 38%;
+    margin: 5px;
+    width: 20%;
+    box-shadow: 0px 0px 9px black;
+    background-image: url(image/staffPerson.jpg);
+    background-size: cover;
+}
+.personInfo {
+    margin: 5px;
+    height: 75%;
+    font-size: 1.3vw;
+    padding: 20px 50px 0 50px;
+    font-family: neuton;
+    color: #dedcdecc;
+    text-align: justify;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.78);
+    box-shadow: 0px 0px 13px black;  
+}
+.name {
+    text-align: center;
+    font-size: 1.8vw;
+    padding: 10px;
+    padding: 10px;
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 99999; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal h1 {
+    text-align: center;
+    padding-top: 3%;
+    font-size: 3vw;
+    color: #546E7A;
+    font-family: company cursive;
+}
+.modal p {
+    text-align: justify;
+    padding: 3%;
+    color: #757575;
+    font-family: cursive;
+}
+/* Modal Content */
+.modal-content {
+    background-color: #fefefeeb;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+#close1, #close2, #close3 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
