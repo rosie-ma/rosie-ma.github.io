@@ -135,22 +135,22 @@ div#navbar.navbar::before {
     display: block;
 }
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 9999; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 100px;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
 }
 
 /* Modal Content */
 .modal-content {
-    background-color: #fefefeeb;
+    background-color: #fefefe;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
@@ -301,51 +301,32 @@ center > .twitter:after {
   font-size: 0.8vw;
       margin-top: 0.7vw;
 }
-@media only screen and (max-width: 720px) {
-  center > button {
-    float: right;
-    margin-top: -75px
-  }
+@media screen and (max-width: 500px) {
+    .section {
+        grid-template-rows: 7% 107%;
+    }
+    .grid-container {
+        grid-template-columns: 20% 68%;
+    }
+    .map {
+        grid-template-columns: unset;
+        grid-template-rows: 31% 50%;
+    }
+    .mapText {
+        grid-column: unset;
+        grid-template-rows: 52% 35%;
+    }
+    .textPart {
+        display: block;
+        grid-template-rows: 20% 45%;
+        padding: 7.5vw 2vw 0vw 6.7vw;
+    }
+    .webs {
+        display: block;
+        padding-left: 36%;
+    }
+    #map {
+        height: 138%;
+        grid-column: unset;
+    }
 }
-
-@media only screen and (max-width: 460px) {
-  center > button {
-    float: none;
-    margin-top: 10px
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

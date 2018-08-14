@@ -53,13 +53,12 @@
     </div>
     <div class="navbar" id="navbar">
         <div class="home menuContent"><a href="home.html">Home</a></div>
-        <div class="home menuContent"><a>Home</a></div>
         <div class="dropdown menuContent">
             <button class="dropbtn services">Services</button>
             <div class="dropdownContent">
                 <a href="#" id="myBtn1" class="dropList">DESIGN</a>
                 <a href="#" id="myBtn2" class="dropList">CRAFTING</a>
-                <a href="#" id="myBtn3"class="dropList">COMMISSIONING </a>
+                <a href="#" id="myBtn3"class="dropList">COMMISSIONING</a>
             </div>
         </div>
         <div class="contact menuContent"><a href="contactUs/contactUs.html">Contact Us</a></div>
@@ -192,7 +191,7 @@ window.onclick = function(event) {
 //scroll button
    $(function() {
     $('.scrollText').click (function() {
-      $('html, body').animate({scrollTop: $('.staffInfo').offset().top }, 'slow');
+      $('html, body').animate({scrollTop: $('aside').offset().top }, 'slow');
       return false;
     });
   });

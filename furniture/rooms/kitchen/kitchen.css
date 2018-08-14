@@ -241,31 +241,6 @@ aside {
 .lightbox-next:hover {
     opacity: .8;
 }
-
-@media (max-width: 767px) {
-    .gallery-container {
-        width: 100%;
-    }
-    .gallery-item {
-        flex-basis: 49.80%;
-        margin-bottom: 3px;
-    }
-    .lightbox-content {
-        width: 80%;
-        height: 60%;
-        margin: 15% auto;
-    }
-}
-@media (max-width: 480px) {
-    .gallery-item {
-        flex-basis: 100%;
-        margin-bottom: 1px;
-    }
-    .lightbox-content {
-        width: 90%;
-        margin: 20% auto;
-    }
-}
 footer {
 	background: #707070;
 	grid-area: footer;
@@ -291,22 +266,22 @@ footer {
     font-size: 1vw;
 }
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 99999; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    padding-top: 100px;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
 }
 
 /* Modal Content */
 .modal-content {
-    background-color: #fefefeeb;
+    background-color: #fefefe;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
@@ -340,31 +315,33 @@ footer {
     text-decoration: none;
     cursor: pointer;
 }
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-/*
-s
-*/
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-
-/*
-@media screen and (max-width: 600px) {
-    .column {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 50%;
-        height: 40vh;
+@media screen and (max-width: 500px) { 
+    .navbar {
+        grid-row-gap: 5px;
     }
-        .grid-container {
-            grid-template-rows: 45% 3% 290% 9%;;
+    .grid-container {
+        grid-template-rows: 40% auto auto auto;
     }
-    .column img {
-        height: 25vh;
+    .gallery-container {
+        width: 85%;
     }
     .slideContainer {
-              background-size: cover;
-    background-attachment: unset;
+        background-attachment: unset;
+        background-size: cover;
+    }
+    .website > a > img {
+        height: 10px;
+        width: 10px;
+        margin: 8px;
+    }
+   .roomCaption { 
+        padding: 2%;
+    }
+    .lightbox-content img {
+        border-radius: 7px;
+        box-shadow: 0 0 0 0 rgba(225, 225, 225, .25); */
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
 }
-*/
