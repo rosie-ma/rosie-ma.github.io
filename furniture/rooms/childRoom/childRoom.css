@@ -320,7 +320,6 @@ footer {
 @media screen and (max-width: 500px) { 
     .navbar {
         grid-row-gap: 5px;
-        font-size: 1.3vw;
     }
     .grid-container {
         grid-template-rows: 40% auto auto auto;

@@ -304,7 +304,6 @@ center > .twitter:after {
 @media screen and (max-width: 500px) {
     .navbar {
         grid-row-gap: 5px;
-        font-size: 1.3vw;
     }
     .section {
         grid-template-rows: 7% 107%;

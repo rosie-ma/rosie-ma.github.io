@@ -329,7 +329,6 @@ div#navbar.navbar::before {
 @media screen and (max-width: 500px) {
     .navbar {
         grid-row-gap: 5px;
-        font-size: 1.3vw;
     }
     .largeImage {
         height: 18%;
