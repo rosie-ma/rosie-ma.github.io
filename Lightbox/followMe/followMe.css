@@ -28,13 +28,12 @@ body {
 }
 main {
     display: flex;
-    justify-content: center;
 }
 .container {
     display: flex;
 }
 #navBar{
-    margin-top: 100px;
+    margin-top: 10%;
     display: inline-block;
     width: 40%;
     z-index: 9999;
@@ -147,12 +146,10 @@ figure img {
     position: relative;
     width: 80%;
     margin: 0 auto;
-    max-width: 70em;
     height: 450px;
     margin-top: 5em;
     display: inline-block;
-    min-width: 800px;
-    max-width: 900px;
+    min-width: 49em;
 }
 .photo-album .polaroid {
     position: absolute;
@@ -340,12 +337,12 @@ figure:focus {
 }
 p {
     color: #1f3444;
-    font-weight: 600;
-    font-size: 20px;
+    font-size: 1.4vw;
     width: 20%;
+    overflow-x: scroll;
+    height: 37em;
     font-family: satisfy;
-    padding-right: 40px;
-    padding-top: 20px;
+    padding: 2%;
     text-align: right;
 }
 p::first-letter {
@@ -357,7 +354,7 @@ p::first-line {
     color: #e4963a;
     font-family: courgette;
     display: block;
-    font-size: 25px;
+    font-size: 1.7vw;
     font-weight: bold;
     text-align: center;
 }
