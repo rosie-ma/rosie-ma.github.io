@@ -419,4 +419,7 @@ footer {
         width: 10px;
         margin: 7px;
     }
+    .downButton {
+        display: none;
+    }
 }

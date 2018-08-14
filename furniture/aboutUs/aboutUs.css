@@ -363,7 +363,7 @@ div#navbar.navbar::before {
         grid-template-rows: 56% 1% 43%;
     }
     .downButton {
-        grid-row: 44 /44;
+        display: none;
     }
     .personImg {
         height: 33%;

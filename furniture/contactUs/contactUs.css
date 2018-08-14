@@ -329,4 +329,7 @@ center > .twitter:after {
         height: 138%;
         grid-column: unset;
     }
+    .downButton {
+        display: none;
+    }
 }

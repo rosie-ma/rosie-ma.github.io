@@ -355,4 +355,7 @@ footer {
         height: 100%;
         object-fit: contain;
     }
+    .downButton {
+        display: none;
+    }
 }
