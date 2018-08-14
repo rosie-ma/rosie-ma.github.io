@@ -32,11 +32,13 @@ nav {
     grid-column: 3;
     grid-row: 1;
     z-index: 1;
+    background-color: #a69e9e;
     background-color: #5e585852;
     font-family: menu;
     font-weight: bolder;
 }
 nav:hover {
+    background-color: #a69e9e;
     background-color: #5e585882;
 }
 .navbar {
@@ -113,6 +115,7 @@ div#navbar.navbar::before {
     position: absolute;
     right: 100%;
     top: -94%;
+    background-color: #a69e9e;
     background-color: #271d1540;
     min-width: 134px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, .2);

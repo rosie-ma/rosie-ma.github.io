@@ -34,11 +34,13 @@ nav {
     grid-column: 3;
     grid-row: 1;
     z-index: 1;
+    background-color: #d8e8a3;
     background-color: #a7bf5280;
     font-family: menu;
     font-weight: bolder;
 }
 nav:hover {
+    background-color: #d8e8a3;
     background-color: #71803d9c;
 }
 .navbar {
@@ -115,6 +117,7 @@ div#navbar.navbar::before {
     position: absolute;
     right: 100%;
     top: -94%;
+    background-color: #d8e8a3;
     background-color: #a7bf52ba;
     min-width: 134px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,.2);
@@ -129,12 +132,12 @@ div#navbar.navbar::before {
 }
 .dropdownContent a:hover {
     color: #2f2f2f;
+    background-color: #d8e8a3;
     background-color: #00000036;
 }
 .dropdown:hover .dropdownContent {
     display: block;
 }
-
 section {
     grid-area: section;
     grid-column: 1 / span 3;
