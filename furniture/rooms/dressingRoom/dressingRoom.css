@@ -337,7 +337,6 @@ footer {
     }
     .grid-container {
         grid-template-rows: 40% auto auto auto;
-        grid-template-columns: 10% 68%;
     }
     .gallery-container {
         width: 85%;

@@ -369,7 +369,6 @@ div#navbar.navbar::before {
     }
     .grid-container {
         grid-template-rows: 56% 1% 43%;
-        grid-template-columns: 10% 68%;
     }
     .downButton {
         display: none;

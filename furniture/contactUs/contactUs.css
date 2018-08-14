@@ -311,7 +311,6 @@ center > .twitter:after {
     }
     .grid-container {
         grid-template-columns: 20% 68%;
-        grid-template-columns: 10% 68%;
     }
     .map {
         grid-template-columns: unset;
