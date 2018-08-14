@@ -302,11 +302,16 @@ center > .twitter:after {
       margin-top: 0.7vw;
 }
 @media screen and (max-width: 500px) {
+    .navbar {
+        grid-row-gap: 5px;
+        font-size: 1.3vw;
+    }
     .section {
         grid-template-rows: 7% 107%;
     }
     .grid-container {
         grid-template-columns: 20% 68%;
+        grid-template-columns: 10% 68%;
     }
     .map {
         grid-template-columns: unset;

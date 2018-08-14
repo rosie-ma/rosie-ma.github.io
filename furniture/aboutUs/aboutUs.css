@@ -329,6 +329,7 @@ div#navbar.navbar::before {
 @media screen and (max-width: 500px) {
     .navbar {
         grid-row-gap: 5px;
+        font-size: 1.3vw;
     }
     .largeImage {
         height: 18%;
@@ -368,6 +369,7 @@ div#navbar.navbar::before {
     }
     .grid-container {
         grid-template-rows: 56% 1% 43%;
+        grid-template-columns: 10% 68%;
     }
     .downButton {
         display: none;

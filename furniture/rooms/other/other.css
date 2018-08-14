@@ -328,9 +328,11 @@ footer {
 @media screen and (max-width: 500px) { 
     .navbar {
         grid-row-gap: 5px;
+        font-size: 1.3vw;
     }
     .grid-container {
         grid-template-rows: 40% auto auto auto;
+        grid-template-columns: 10% 68%;
     }
     .gallery-container {
         width: 85%;
@@ -357,4 +359,5 @@ footer {
     .downButton {
         display: none;
     }
+    .dropbtn {
 }
