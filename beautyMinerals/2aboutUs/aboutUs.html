@@ -1,0 +1,186 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="aboutUs.css" />
+    <link rel="icon" type="image/x-icon" href="../images/favIcon.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="../jquery-3.2.1.min.js"></script>
+    <title></title>
+</head>
+<body>
+<main>
+<navbar id="navbar"  class="navbar">
+    <a class="menuItem menuLogo" href="../1home/home.html"><img src="../images/logo.png" id="logo" /></a>
+    <a class="menuItem menuContext" href="../1home/home.html">ГЛАВНАЯ</a>
+    <a class="menuItem menuContext" href="../3catalog/catalog.html">КАТАЛОГ</a>
+    <a class="menuItem menuContext" href="aboutUs.html">О НАС</a>
+    <a class="menuItem menuContext" href="../4contactUs/contactUs.html">КОНТАКТЫ</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</navbar>  
+<div class="popUp"> 
+<div class="modalShow">     
+    <div class="modalOverlay"><!-- backgrounds rgba color -->  </div>
+    <div class="modalWrapper" id="modalWrapper">     
+        <div class="modalImgShow" id="modalImgShow"> 
+            <!-- image`s top header-->
+            <div class="modalHeader" id="modalHeader">
+                <div class="modalCloseButton" id="modalCloseButton" type="button"></div>
+            </div>
+                <!-- img and all that should be shown -->
+                <div class="modalOnlyImg" id="modalOnlyImg">            
+                <!--img which should get src of opend img--> 
+                    <img src="" id="modalOpenedImg" class="modalOpenedImg">   
+                </div>
+        </div>
+    </div>
+</div> 
+</div>
+<section class="aboutUsContent">
+    <div class="contentLogoImg">
+        <img alt="companyLogo" src="images/logo.jpg" />
+    </div>
+    <p class="contentText">ООО «Бьюти Минералс» — оптовая компания, реализующая одноименный бренд натуральной косметики Мёртвого моря Beauty Minerals.<br /><br />
+    Контрактное производство в Израиле, позволило нам добиться высочайшего качества и умеренных цен на нашу продукцию!<br /><br />Группа наших компаний, на протяжении уже более 15 лет занимается оптовыми поставками косметики Мёртвого моря на рынок Татарстана и России.<br /><br />В середине 2016 года нами было принято решение о разработки собственной линейки косметики по уходу за лицом, телом и волосами  Beauty Minerals, где впервые использованы уникальные свойства фрукта Аннона (сахарное яблоко) в сочетание с грязями и солями Мертвого моря. Благодаря этому нам удалось добиться удивительного эффекта замедления старения кожи и восстановлению здоровья волос.<br /><br />
+    <span class="contentGoldenMarkImg">
+        <img alt="goldenMark" src="images/goldenMark.png"  />
+    </span>
+    Производство нашей косметики протекает на заводе N.O.I. cosmetics в Израиле и проходит полный курс проверки качества и соответствия международным стандартам в исследовательских лабораториях завода.<br /><br />Нами были воплощены новейшие формулы, в составе которых исключительно натуральные ингредиенты. В основе косметики Beauty Minerals лежат новейшие способы производства, соответствующие международным стандартам качества, что подтверждается сертификатами.<br /><br />
+    Вся продукция Beauty Minerals не содержит спиртов и парабенов и произведена по уникальной рецептуре из экологически чистого растительного сырья.<br /><br />Продукция прошла аккредитацию в международных системах обеспечения качества GMP и ISO.<br /><br />Наша гордость – знак Национального Института Стандартов Израиля «Golden Mark» (Золотая Марка), подтверждающий стабильное качество, экологическую чистоту и высокотехнологичность производства.<br /><br />Работая с нами, вы приобретаете надежного и единственного в России партнёра по поставке натуральной косметики Мёртвого моря бренда «Beauty Minerals».<br /><br />Добро пожаловать в мир натуральной косметики Beauty Minerals!</p>
+    <hr class="doubleLine">
+    <h1 class="caption">О продукции</h1>
+    <h3 class="littleCaption">Натуральная косметика Мёртвого моря Beauty Minerals</h3>
+    <p class="contentText">В современном мире, где выбор косметических средств по уходу за кожей и волосами огромен, особняком стоит косметика, произведённая на основе грязи и соли Мертвого моря, а также специальных экстрактов тропических растений.<br /><br />Желание продлить красоту, здоровье и сияние вашей кожи и волос, побудило нас на создание уникальной по своим свойствам косметической линии.<br /><br />Представляем Вашему вниманию линейку косметических средств Beauty Minerals, где впервые использованы уникальные свойства фрукта Аннона (сахарное яблоко) в сочетание с грязями и солями Мертвого моря. Благодаря этому нам удалось добиться удивительного эффекта замедления старения кожи и восстановлению здоровья волос.<br /><br /><span class="contentRightIngridient">
+        <img alt="rightIngridient" src="images/annona2.jpg"  />
+    </span>Уникальные свойства Мертвого Моря известны с глубокой древности. Легенды гласят, что секрет красоты Клеопатры в использовании целебных свойств минералов и грязей Мертвого моря.<br /><br />Помимо целебной грязи, Мертвое море обладает набором полезных веществ в структуре воды. Процентное содержание солей в водах Мёртвого моря почти в 10 раз превосходит их содержание в Мировом океане. Воды Мёртвого моря содержат практически все элементы таблицы Менделеева. Особый оздоровительный эффект производят такие элементы как:<br /><br />     — магний – природный антидепрессант, обладающий противоаллергенными свойствами, поднимает общий тонус клеток кожи;<br /><br />— бром – обладает антибактерицидным и успокаивающим свойствами;<br /><br /><span class="contentLeftIngridient">
+        <img alt="leftIngridient" src="images/honey.jpg"  />
+    </span>
+    — кальций – укрепляет и способствует регенерации клеток организма, стабилизирует метаболические процессы в организме и обладает антибактериальными свойствами;<br /><br />— натрий – это энергия и контроль водно-солевого баланса в организме;<br /><br />— калий – способствует быстрому распределению питательных веществ в клетках организма, снабжая их всем необходимым для полноценной работы. Содержание калия в водах Мёртвого моря в 20 раз выше, чем в обычной морской воде.<br /><br />
+    <span class="contentRightIngridient">
+        <img alt="rightIngridient" src="images/depositphotos.jpg"  />
+    </span>Следующий компонент косметики Beauty Minerals – Аннона.<br /><br />
+    Аннона, или Сахарное яблоко – кладезь витаминов и микроэлементов, необходимых для сохранения молодости, эластичности, блеска и здоровья кожи и волос. Входящий в состав Анноны Витамин С обеспечит длительную защиту вашей кожи от появления морщин, восстановит упругость и эластичность, нейтрализует свободные радикалы, укрепит иммунную систему кожи.<br /><br />Калий сбалансирует водно-солевой баланс кожи и увлажнит её, обеспечит регенерацию и омоложение клеток. Также калий способствует укреплению волос и борется их выпадением.<br /><br />Магний играет важную роль в выработке коллагенов и укреплении соединительных тканей и борется с появлением секущихся концов.<br /><br />Биоактивные компоненты, используемые при производстве косметики Beauty Minerals, получены с применением технологии низкотемпературной вакуумной экстракции, а масла – по технологии холодного отжима. В совокупности, применение этих двух технологий, гарантирует сохранение всех целебных и омолаживающих свойств, входящих в состав нашей косметики масел и экстрактов.<br /><br /><span class="contentLeftIngridient">
+        <img alt="leftIngridient" src="images/annona.jpg"  />
+    </span>Вся продукция Beauty Minerals не содержит спиртов и парабенов и произведена по уникальной рецептуре из экологически чистого растительного сырья.<br /><br />Продукция прошла аккредитацию в международных системах обеспечения качества GMP и ISO.<br /><br />Наша гордость – знак Национального Института Стандартов Израиля «Golden Mark» (Золотая Марка), подтверждающий стабильное качество, экологическую чистоту и высокотехнологичность производства.
+    </p>
+    <hr class="doubleLine">
+    <h1 class="caption">Декларации соответствия</h1>
+    <div class="coverPhoto">
+        <img alt="mineralProducts" src="images/coverPhoto.jpg" />    
+    </div>
+    <p class="contentTextMini">Вся продукция <b>Beauty Minerals</b> соответствует требованиям ТР ТС 009/2011 «О безопасности парфюмерно-косметической продукции», утвержденным Решением Комиссии Таможенного союза от 23 сентября 2011 г. №799, что подтверждается соответствующими Декларациями о соответствии:</p>
+    <div class="declarationRow">
+    <div class="column">
+        <img src="images/Deklaratsii-TR-TS-store_01-724x1024.jpg" alt="">
+    </div>
+    <div class="column">
+        <img src="images/Deklaratsii-TR-TS-store_02-724x1024.jpg" alt="">
+    </div>
+    <div class="column">
+        <img src="images/Deklaratsii-TR-TS-store_03-724x1024.jpg" alt="">
+    </div>
+    <div class="column">
+        <img src="images/Deklaratsii-TR-TS-store_04-724x1024.jpg" alt="">
+    </div>
+    <div class="column">
+        <img src="images/Deklaratsii-TR-TS-store_05-724x1024.jpg" alt="">
+    </div>
+    <div class="column">
+        <img src="images/Deklaratsii-TR-TS-store_06-724x1024.jpg" alt="">
+    </div>
+    <div class="column">
+        <img src="images/Deklaratsii-TR-TS-store_07-724x1024.jpg" alt="">
+    </div>
+    <div class="column">
+        <img src="images/Deklaratsii-TR-TS-store_08-724x1024.jpg" alt="">
+    </div>
+    <div class="column">
+        <img src="images/Deklaratsii-TR-TS-store_09-724x1024.jpg" alt="">
+    </div>
+    <div class="column">
+        <img src="images/Deklaratsii-TR-TS-store_10-724x1024.jpg" alt="">
+    </div>
+    <div class="column">
+        <img src="images/Deklaratsii-TR-TS-store_11-724x1024.jpg" alt="">
+    </div>
+    <div class="column">
+        <img src="images/Deklaratsii-TR-TS-store_12-724x1024.jpg" alt="">
+    </div>
+    <div class="column">
+        <img src="images/Deklaratsii-TR-TS-store_13-724x1024.jpg" alt="">
+    </div>
+    <div class="column">
+        <img src="images/Deklaratsii-TR-TS-store_14-724x1024.jpg" alt="">
+    </div>
+</div>
+</section>
+</main>
+<hr class="doubleLine">
+<footer>
+    <div class="footerContent">
+<!--
+        <div class="creditCards">
+            <img class="cardImg" id="visa" src="../images/visa.png" alt="Visa" />
+            <img class="cardImg" id="master" src="../images/mastercard.png" alt="MasterCard" />
+            <img class="cardImg" id="mir" src="../images/mir.png" alt="Mir" />
+        </div>
+-->
+    </div>
+    <div class="footerContent">
+        <div class="websiteIcons">
+<!--            <i class="fab fa-vk webIcons"></i>-->
+            <i class="fab fa-instagram webIcons"></i>
+            <i class="fab fa-facebook-square webIcons"></i>
+        </div>
+    </div>    
+    <div class="footerContent">
+        <div class="copyright">
+            <p>&copy; 2018 ООО «БЬЮТИ МИНЕРАЛС» ИНТЕРНЕТ-МАГАЗИН НАТУРАЛЬНОЙ КОСМЕТИКИ BEAUTY MINERALS. ALL RIGHTS RESERVED. BM STORE<br /></p>
+            <a src=""><p>ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ<p></a>
+        </div>
+    </div>
+</footer>
+</body>
+<script>$(function() {
+    $('.column img').click(function() {
+        var $src = $(this).attr('src');
+        $('.modalShow').fadeIn('');
+        $('.modalShow').css("display", "flex");
+        $('.modalOpenedImg').attr('src', $src);
+    });
+    
+//close button
+    $('.modalCloseButton, .modalOverlay').click(function() {
+        $('.modalShow').fadeOut('');
+   });
+});
+</script>
+<script>
+//responsive navbar code
+function myFunction() {
+    var x = document.getElementById('navbar');
+    if (x.className === 'navbar') {
+        console.log(x)
+        x.className += ' responsive';
+    } else {
+        x.className = 'navbar';
+    }
+}
+    
+window.onscroll = function() {
+    scrollFunction()
+};
+    
+//onscroll logo gets smaller
+function scrollFunction() {
+    if (window.pageYOffset > 10 ) {
+        document.getElementById('logo').style.maxWidth = '30%';
+        document.getElementsByTagName('navbar')[0].style.position = 'fixed'
+    }else {
+        document.getElementById('logo').style.maxWidth = '75%';
+        document.getElementsByTagName('navbar')[0].style.position = 'relative'
+}
+}
+</script>
+</html>
