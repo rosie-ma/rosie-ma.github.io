@@ -34,11 +34,11 @@ navbar a {
     font-family: mainFont;
     padding: 1% 0%;
     display: block;
-    color: #455963;
+    color: #5D4037;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.3vw;
+    font-size: 1.5vw;
     transition: .5s;
 }
 .menuLogo {
@@ -52,11 +52,11 @@ navbar a {
     align-items: center;
 }
 .menuContext:hover {
-    border-bottom: 1px solid #78909C;
+    border-bottom: 1px solid #71564d;
 }
 #logo {
     transition: .5s;
-    max-width: 62%;
+    max-width: 75%;
 }
 navbar .icon {
     display: none;
@@ -67,16 +67,8 @@ navbar .icon {
     width: 100%;
     position: relative;
 }
-.slideshowContainerBig {
-    width: 100%;
-    position: relative;
-}
 .mySlides {
     display: none
-}
-.mySlidesBig {
-    display: none;
-    justify-content: center;
 }
 .textOnImg {
     left: 5%;
@@ -144,26 +136,7 @@ navbar .icon {
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, .8);
 }
-.prevButton, .nextButton {
-    cursor: pointer;
-    position: absolute;
-    top: 45%;
-    width: auto;
-    padding: .8%;
-    color: #7e7e7e;
-    font-weight: bold;
-    font-size: 1.3vw;
-    transition: .6s ease;
-    border-radius: 0 3px 3px 0;
-}
-.prevButton:hover, .nextButton:hover {
-    background-color: rgba(0, 0, 0, .8);
-}
 .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-.nextButton {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
@@ -210,16 +183,6 @@ navbar .icon {
 }
 .productImg:hover {
     transform: scale(1.2);
-}
-.productSlideContent {
-    margin: 1%;
-    width: 21%;
-}
-.productSlideContent > img {
-    max-width: 100%;
-}
-.productSlideContent > p {
-    font-size: 1vw;
 }
 .overlay {
     background-color: #00000042;
