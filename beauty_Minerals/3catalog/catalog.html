@@ -31,12 +31,12 @@
 <aside class="productPortfolio">
 <div class="productContainer">
 <div id="myBtnContainer">
-      <button class="btn active" onclick="filterSelection('all')">Показать все</button>
-      <button class="btn" onclick="filterSelection('forBody')">Для тела</button>
-      <button class="btn" onclick="filterSelection('forFace')">Для лица</button>
-      <button class="btn" onclick="filterSelection('forHair')">Для волос</button>
-      <button class="btn" onclick="filterSelection('forPresent')">Подарочные наборы</button>
-      <button class="btn" onclick="filterSelection('forMens')">Для мужчин</button>
+      <button class="btn active" id="all" onclick="filterSelection('all')">Показать все</button>
+      <button class="btn" id="forBody" onclick="filterSelection('forBody')">Для тела</button>
+      <button class="btn" id="forFace" onclick="filterSelection('forFace')">Для лица</button>
+      <button class="btn" id="forHair" onclick="filterSelection('forHair')">Для волос</button>
+      <button class="btn" id="forPresent" onclick="filterSelection('forPresent')">Подарочные наборы</button>
+      <button class="btn" id="forMens" onclick="filterSelection('forMens')">Для мужчин</button>
 </div>    
 <!-- Portfolio Gallery Grid -->
 <div class="row">
@@ -456,7 +456,17 @@ $(function() {
 });
 </script>
 <script>
-filterSelection('all')
+  filterSelection(location.hash.substr(1))  
+var btnContainer = document.getElementById('myBtnContainer');
+var btns = btnContainer.getElementsByClassName('btn');
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener('click', function(){
+    var current = document.getElementsByClassName('active');
+    current[0].className = current[0].className.replace(' active', '');
+    this.className += ' active';
+  });
+}
+
 function filterSelection (c) {
   var x, i;
   x = document.getElementsByClassName('column');
@@ -490,15 +500,6 @@ function removeClass (element, name) {
 }
 
 
-var btnContainer = document.getElementById('myBtnContainer');
-var btns = btnContainer.getElementsByClassName('btn');
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener('click', function(){
-    var current = document.getElementsByClassName('active');
-    current[0].className = current[0].className.replace(' active', '');
-    this.className += ' active';
-  });
-}
 </script>
 <script>
 //responsive navbar code

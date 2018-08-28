@@ -27,11 +27,11 @@ navbar {
 navbar a {
     padding: 1% 0%;
     display: block;
-    color: #5D4037;
+    color: #455963;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.4vw;
+    font-size: 1.3vw;
 }
 .menuLogo {
     margin-right: auto;
@@ -44,11 +44,11 @@ navbar a {
     align-items: center;
 }
 .menuContext:hover {
-    border-bottom: 1px solid #5D4037;
+    border-bottom: 1px solid #78909C;
 }
 #logo {
     transition: 1s;
-    max-width: 75%;
+    max-width: 62%;
 }
 navbar .icon {
     display: none;

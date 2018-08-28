@@ -33,11 +33,11 @@ navbar a {
     font-family: mainFont;
     padding: 1% 0%;
     display: block;
-    color: #5D4037;
+    color: #455963;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.4vw;
+    font-size: 1.3vw;
 }
 .menuLogo {
     margin-right: auto;
@@ -50,11 +50,11 @@ navbar a {
     align-items: center;
 }
 .menuContext:hover {
-    border-bottom: 1px solid #5D4037;
+    border-bottom: 1px solid #78909C;
 }
 #logo {
     transition: 1s;
-    max-width: 75%;
+    max-width: 62%;
 }
 navbar .icon {
     display: none;
@@ -105,53 +105,24 @@ navbar .icon {
     margin: .5%;
     color: #607D8B;
     border: none;
-    outline: none;
     padding: .6% .8%;
     cursor: pointer;
     font-weight: bold;
-    background: transparent;
-    border: 2px solid #91a8b3;
-    position: relative;
-    display: inline-block;
-    transition: all .3s ease-in-out;
+    border: solid 2px transparent;
+    border-image: linear-gradient(45deg, #f7c2cb, #B0BEC5);
+    border-image-slice: 1;
+    background: linear-gradient(45deg, pink, #B0BEC5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-fill-color: transparent;
 }
 
-.btn:before, .btn:after {
-    content: '';
-    display: block;
-    position: absolute;
-    border-color: #91a8b3;
-    box-sizing: border-box;
-    border-style: solid;
-    width: 1em;
-    height: 1em;
-    transition: all .3s ease-in-out
-}
-.btn:before {
-    top: -6px;
-    left: -6px;
-    border-width: 2px 0 0 2px;
-    z-index: 5;
-}
-.btn:after {
-    bottom: -6px;
-    right: -6px;
-    border-width: 0 2px 2px 0;}
-
-.btn:hover:before, .btn:hover:after {
-    width: calc(100% + 12px);
-    height: calc(100% + 12px);
-    border-color: #decdc7
-}
 .btn:hover {
     color: #a99088;
     background-color: #ffedd2;
-    border-color: #ead9d3;
 }
 
 .btn.active {
-    background-color: #b1c6d0;
-    color: #ffffff;
 }
 
 h5 {
