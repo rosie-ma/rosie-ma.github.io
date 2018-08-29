@@ -34,11 +34,11 @@ navbar a {
     font-family: mainFont;
     padding: 1% 0%;
     display: block;
-    color: #5D4037;
+    color: #546E7A;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     transition: .5s;
 }
 .menuLogo {
@@ -52,7 +52,7 @@ navbar a {
     align-items: center;
 }
 .menuContext:hover {
-    border-bottom: 1px solid #71564d;
+    border-bottom: 1px solid #78909c;
 }
 #logo {
     transition: .5s;
@@ -70,13 +70,21 @@ navbar .icon {
 .mySlides {
     display: none
 }
+.slideshowContainerBig {
+    width: 100%;
+    justify-content: center;
+}
+.mySlidesBig {
+    display: none;
+    justify-content: center;
+}
 .textOnImg {
-    left: 5%;
-    top: 87%;
+    left: 3%;
+    top: 89%;
     position: absolute;
-    color: #3E2723;
+    color: #4E342E;
     font-weight: bold;
-    font-size: 2.5vw;
+    font-size: 2vw;
     font-family: contentFont;
 }
 .fade {
@@ -133,10 +141,25 @@ navbar .icon {
     transition: .6s ease;
     border-radius: 0 3px 3px 0;
 }
-.prev:hover, .next:hover {
+.prevBig:hover, .nextBig:hover {
     background-color: rgba(0, 0, 0, .8);
 }
-.next {
+.prevBig, .nextBig {
+    cursor: pointer;
+    position: absolute;
+    top: 80%;
+    width: auto;
+    padding: .8%;
+    color: #37474F;
+    font-weight: bold;
+    font-size: 1.3vw;
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.prevBig:hover, .nextBig:hover {
+    background-color: rgba(0, 0, 0, .8);
+}
+.next, .nextBig {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
@@ -145,8 +168,17 @@ navbar .icon {
     width: 70%;
     border-top: 2px solid #455A64;
 }
-
-
+.content {
+    width: 20%;
+    height: 56%;
+    margin: 1%;
+}
+.content > img {
+    max-width: 90%;
+}
+.content > p {
+    font-size: 1vw;
+}
 .productSection { 
     margin: 1vw;
     padding: 1vw 7vw;
@@ -181,6 +213,7 @@ navbar .icon {
 .productImg {
     transition: transform .5s ease-out;
 }
+
 .productImg:hover {
     transform: scale(1.2);
 }
@@ -212,7 +245,6 @@ navbar .icon {
 }
 
 
-
 .presentProductSection {
     margin: 1vw;
     padding: 1vw 7.5vw;
@@ -232,62 +264,6 @@ navbar .icon {
 .ourProducts {
     margin: 2vw 0;
 }
-.masterBox {
-    position:relative;
-    width: 83%;
-    margin: 0 auto;
-}
-.containerBox {
-    overflow:hidden;
-    width: 100%;
-}
-li {
-    list-style: none;
-}
-.hidden {
-  display: none;
-}
-.listBox li{
-    width: 20%; /*Change this depending the number of "li" that you want to have per page. For example; if you want 4 "li" per page the width will be 25% because you have to complete the 100% (25*4 = 100)*/
-    padding: 4px;
-    height: 55%;
-    float:left;
-}
-.listBox {
-    width: 1075%; /*Change this depending of total number of "li" that you have and depending the number of "li" that you want to have per page. For example; if you have a total of 12 "li" and each one has a 25% you will need a width of 300% (25*12 = 300)*/
-    display: flex;
-}
-.content {
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-.content img {
-    width: 100%;
-    -webkit-box-shadow: 0px 0px 7.5px 0px rgba(34, 3, 39, 0.50);
-    -moz-box-shadow: 0px 0px 7.5px 0px rgba(34, 3, 39, 0.50);
-    box-shadow: 0px 0px 7.5px 0px rgba(34, 3, 39, 0.50);
-}
-.arrow {
-    position: absolute;
-    font-size: 3vw;
-    color: #263238;
-    cursor: pointer;
-    top: 9rem;
-}
-.arrow.back {
-    width: 0rem;
-    left: -1.5rem;
-}
-.arrow.forward {
-  width: 0rem;
-  right: 0rem;
-}
-
 
 footer {
     height: 100px;

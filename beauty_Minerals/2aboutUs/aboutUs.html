@@ -176,10 +176,18 @@ window.onscroll = function() {
 function scrollFunction() {
     if (window.pageYOffset > 10 ) {
         document.getElementById('logo').style.maxWidth = '30%';
-        document.getElementsByTagName('navbar')[0].style.position = 'fixed'
-    }else {
+        document.getElementsByTagName('navbar')[0].style.position = 'fixed';
+        var menuItems = document.querySelectorAll("navbar > a");
+        for (let i = 0; i < menuItems.length; i++) {
+            menuItems[i].style.fontSize = '1.1vw';
+        }
+    }else if(window.pageYOffset < 20 ) {
         document.getElementById('logo').style.maxWidth = '75%';
-        document.getElementsByTagName('navbar')[0].style.position = 'relative'
+        document.getElementsByTagName('navbar')[0].style.position = 'relative';
+        var menuItems = document.querySelectorAll("navbar > a");
+        for (let i = 0; i < menuItems.length; i++) {
+            menuItems[i].style.fontSize = '1.3vw';
+        }
 }
 }
 </script>

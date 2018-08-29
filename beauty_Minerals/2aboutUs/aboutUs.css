@@ -37,11 +37,11 @@ navbar {
 navbar a {
     padding: 1% 0%;
     display: block;
-    color: #5D4037;
+    color: #546E7A;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.4vw;
+    font-size: 1.3vw;
 }
 .menuLogo {
     margin-right: auto;
@@ -54,7 +54,7 @@ navbar a {
     align-items: center;
 }
 .menuContext:hover {
-    border-bottom: 1px solid #5D4037;
+    border-bottom: 1px solid #78909c;
 }
 #logo {
     transition: 1s;
