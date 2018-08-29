@@ -214,10 +214,10 @@ aside {
 }
 .lightbox-content {
     position: relative;
-    width: 70%;
-    height: 70%;
+    width: 97%;
+    height: 90%;
     margin: 5% auto;
-}
+    
 .lightbox-content img {
     border-radius: 7px;
     box-shadow: 0 0 3px 0 rgba(225, 225, 225, .25);
@@ -339,6 +339,12 @@ footer {
     }
    .roomCaption { 
         padding: 2%;
+    }
+    .lightbox-content {
+        position: relative;
+        width: 97%;
+        height: 90%;
+        margin: 5% auto;
     }
     .lightbox-content img {
         border-radius: 7px;
