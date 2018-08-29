@@ -177,6 +177,7 @@ navbar .icon {
     max-width: 90%;
 }
 .content > p {
+    margin-top: 2%;
     font-size: 1vw;
 }
 .productSection { 
