@@ -306,30 +306,92 @@ footer {
 
 @media screen and (max-width: 800px) {
     navbar {
-        display: grid;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
     }
     navbar a:not(:first-child) {
         display: none;
     }
     navbar a.icon {
-        float: right;
-        display: block;
+        user-select: none;
+        font-size: 3vw;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 5%;
     }
     navbar.responsive {
         position: relative;
     }
     navbar.responsive .icon {
+        font-size: 3vw;
+        user-select: none;
         position: absolute;
-        right: 35%;
-        top: 0;
+        width: 2.5%;
+        top: 9%;
+        right: 0%;
+    }
+    .productSection > div {
+        width: 130px;
+    }
+    .textOnImg {
+        top: 80%;
+    }
+    .prevBig, .nextBig {
+        font-size: 6vw;
+        top: 83%;
+    }
+    .prev, .next {
+        font-size: 6vw;
+        top: 30%;
+    }
+    #menuLogo {
+        display: flex;
+        margin-right: auto;
+        order: 0;
+        width: 80%;
+    }
+    .content {
+        width: 20%;
+        height: 27%;
+    }
+    .content > img {
+        max-width: 100%;
     }
     navbar.responsive a {
-        float: none;
-        display: block;
+        font-size: 4vw;
+        justify-content: flex-start;
+        display: flex;
         text-align: left;
+        width: 100%;
   }
     #logo {
+        height: 7%;
         max-width: 50%;
+    }
+    .copyright {
+        color: #393939;
+        font-size: 1.2vw;
+    }
+    footer {
+        height: 60px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .productSection > div {
+        width: 300px;
+    }
+    .content > img { 
+        max-width: 100%;
+    }
+    .content {
+        height: 20%;
+    }
+    .content > p {
+        font-size: 1.3vw;
+    }
+    .prevBig, .nextBig {
+        font-size: 6vw;
+        top: 86%;
     }
 }
