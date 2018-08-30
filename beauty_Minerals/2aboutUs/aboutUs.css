@@ -279,30 +279,66 @@ footer {
 
 @media screen and (max-width: 800px) {
     navbar {
-        display: grid;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
     }
     navbar a:not(:first-child) {
         display: none;
     }
     navbar a.icon {
-        float: right;
-        display: block;
+        user-select: none;
+        font-size: 3vw;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 5%;
     }
     navbar.responsive {
         position: relative;
     }
     navbar.responsive .icon {
+        font-size: 3vw;
+        user-select: none;
         position: absolute;
-        right: 35%;
-        top: 0;
+        width: 2.5%;
+        top: 9%;
+        right: 0%;
+    }
+    #menuLogo {
+        display: flex;
+        margin-right: auto;
+        order: 0;
+        width: 80%;
     }
     navbar.responsive a {
-        float: none;
-        display: block;
+        font-size: 4vw;
+        justify-content: flex-start;
+        display: flex;
         text-align: left;
+        width: 100%;
   }
     #logo {
+        height: 7%;
         max-width: 50%;
+    }
+    .copyright {
+        color: #393939;
+        font-size: 1.2vw;
+    }
+    footer {
+        height: 60px;
+    }
+    .contentText {
+        font-size: 3vw;
+    }
+    .caption {
+        font-size: 5vw;
+    }
+    .littleCaption {
+        font-size: 3vw;
+    }
+    .modalImgShow {
+        width: 90vw;
+        height: 50vh;
     }
 }
