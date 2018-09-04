@@ -11,10 +11,15 @@
 <main>
 <navbar id="navbar" class="navbar">
     <a class="menuItem menuLogo" id="menuLogo" href="../home.html"><img src="../images/logo.png" id="logo" /></a>
-    <a class="menuItem menuContext" href="../home.html">ГЛАВНАЯ</a>
-    <a class="menuItem menuContext" href="../3catalog/catalog.html">КАТАЛОГ</a>
-    <a class="menuItem menuContext" href="../2aboutUs/aboutUs.html">О НАС</a>
-    <a class="menuItem menuContext" href="contactUs.html">КОНТАКТЫ</a>
+    <a class="menuItem menuContext" href="../home.html"><p class="russian">ГЛАВНАЯ</p><p class="armenian">ԳԼԽԱՎՈՐ</p></a>
+    <a class="menuItem menuContext" href="../3catalog/catalog.html"><p class="russian">КАТАЛОГ</p><p class="armenian">ԿԱՏԱԼՈԳ</p></a>
+    <a class="menuItem menuContext" href="../2aboutUs/aboutUs.html"><p class="russian">О НАС</p><p class="armenian">ՄԵՐ ՄԱՍԻՆ</p></a>
+    <a class="menuItem menuContext" href="contactUs.html"><p class="russian">КОНТАКТЫ</p><p class="armenian">ԿՈՆՏԱԿՏՆԵՐ</p></a>
+    <a>
+        <button class="languageButton" id="armenian" onclick="languageArmenian()">ՀԱՅ</button>
+        <div class="buttonSeparator"></div>
+        <button class="languageButton" id="russian" onclick="languageRussian()">РУС</button>
+    </a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
     </a>
@@ -26,21 +31,21 @@
             <div class="contactBox">
                 <i class="icon fas fa-phone"></i>
                 <div>
-                    <h1>Позвоните нам</h1>
+                    <h1><p class="russian">Позвоните нам</p><p class="armenian">Զանգահարեք մեզ</p></h1>
                     <h2>+37499844641</h2>
                 </div>
             </div>
             <div class="contactBox">
                 <i class="icon fas fa-map-marked-alt"></i>
                 <div>
-                    <h1>Приезжайте к нам</h1>
+                    <h1><p class="russian">Приезжайте к нам</p><p class="armenian">եկեք մեզ մոտ</p></h1>
                     <h2>г. Казань, ул. Поперечно-Ноксинская, д.46</h2>
                 </div>
             </div>
             <div class="contactBox">
                 <i class="icon fas fa-envelope"></i>
                 <div>
-                    <h1>Напишите нам</h1>
+                    <h1><p class="russian">Напишите нам</p><p class="armenian">Գրեք մեզ</p></h1>
                     <h2>info@beauty-minerals.ru</h2>
                 </div>
             </div>
@@ -51,10 +56,10 @@
                 <div>
                     <h1>Beauty Minerals</h1>
                     <a href="skype:BeautyMinerals?call">
-                        <h2>Позвонить</h2>
+                        <h2><p class="russian">Позвонить</p><p class="armenian">Զանգահարել</p></h2>
                     </a>
                     <a href="skype:BeautyMinerals?chat">
-                        <h2>Написать</h2>
+                        <h2><p class="russian">Написать</p><p class="armenian">Գրել</p></h2>
                     </a>
                 </div>
             </div>
@@ -63,7 +68,7 @@
                 <div>
                     <h1>+79172565442</h1>
                     <a title="WhatsApp" href="https://api.whatsapp.com/send?phone=+37496599088&text=Hi, I contacted you Through your website.">
-                        <h2>Написать</h2>
+                        <h2><p class="russian">Написать</p><p class="armenian">Գրել</p></h2>
                     </a>
                 </div>
             </div>
@@ -72,7 +77,7 @@
                 <div>
                     <h1>+79172565442</h1>
                     <a title="Viber" href="viber://chat?number=+79172565442">
-                        <h2>Написать</h2>
+                        <h2><p class="russian">Написать</p><p class="armenian">Գրել</p></h2>
                     </a>
                 </div>
             </div>
@@ -112,6 +117,28 @@
     </div>
 <hr class="doubleLine">
 </footer>
+        <script>
+function languageArmenian() {
+    var russianWords = document.getElementsByClassName('russian');
+    var armenianWords = document.getElementsByClassName('armenian');
+    for(let i = 0; i < russianWords.length; i++) {
+        russianWords[i].style.display = 'none';
+    }   
+    for(let i = 0; i < armenianWords.length; i++) {
+        armenianWords[i].style.display = 'block';
+    }
+}
+function languageRussian() {
+    var russianWords = document.getElementsByClassName('russian');
+    var armenianWords = document.getElementsByClassName('armenian');
+    for(let i = 0; i < russianWords.length; i++) {
+        russianWords[i].style.display = 'block';
+    }   
+    for(let i = 0; i < armenianWords.length; i++) {
+        armenianWords[i].style.display = 'none';
+    }
+}
+</script>
 <script>
       function initMap() {    
         var map = new google.maps.Map(document.getElementById('map'), {

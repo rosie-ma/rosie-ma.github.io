@@ -6,6 +6,14 @@
     font-family: contentFont;
     src: url(../fonts/contentFont.ttf);
 }
+@font-face {
+    font-family: mainFontArm;
+    src: url(../fonts/mainFontArm.ttf);
+}
+@font-face {
+    font-family: contentFontArm;
+    src: url(../fonts/contentFontArm.ttf);
+}
 * {
     padding: 0;
     margin: 0;
@@ -14,10 +22,16 @@ html, body {
     height: 100%;
 }
 main {
-    font-family: contentFont;
     position: relative;
 }
-
+main .russian {
+    font-family: contentFont;
+}
+main .armenian {
+    font-style: italic;
+    font-weight: 100;
+    font-family: contentFontArm;
+}
 
 navbar {
     box-shadow: 0px 0px 12px #474748;
@@ -29,8 +43,16 @@ navbar {
     z-index: 10;
     width: 100%;
 }
-navbar a {
+main navbar .armenian {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1vw;
+    font-family: mainFontArm;
+}
+main navbar  .russian {
     font-family: mainFont;
+}
+navbar a {
     padding: 1% 0%;
     display: block;
     color: #546E7A;
@@ -59,8 +81,17 @@ navbar a {
 navbar .icon {
     display: none;
 }
-
-
+.languageButton {
+    background-color: transparent;
+    border: none;
+    color: #78909C;
+}
+.buttonSeparator {
+    display: inline-block;
+    width: 1px;
+    height: 1.6%;
+    background-color: #455A64;
+}
 .productPortfolio {
     background-color: #f0eae5;
     width: 100%;
@@ -377,4 +408,13 @@ footer {
     .column {
         width: 40%;
     }
+}
+.russian {
+    display: none;
+}
+.buttonSeparator {
+    display: inline-block;
+    width: 1px;
+    height: 1.6%;
+    background-color: #455A64;
 }

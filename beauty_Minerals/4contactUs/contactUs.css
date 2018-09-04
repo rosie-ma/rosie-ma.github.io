@@ -2,6 +2,18 @@
     font-family: mainFont;
     src: url(../fonts/mainFont.ttf);
 }
+@font-face {
+    font-family: contentFont;
+    src: url(../fonts/contentFont.ttf);
+}
+@font-face {
+    font-family: mainFontArm;
+    src: url(../fonts/mainFontArm.ttf);
+}
+@font-face {
+    font-family: contentFontArm;
+    src: url(../fonts/contentFontArm.ttf);
+}
 * {
     padding: 0;
     margin: 0;
@@ -10,8 +22,16 @@ html, body {
     height: 100%;
 }
 main {
-     font-family: mainFont;
     background-color: #3b3a36;
+    position: relative;
+}
+main .russian {
+    font-family: contentFont;
+}
+main .armenian {
+    font-style: italic;
+    font-weight: 100;
+    font-family: contentFontArm;
 }
 
 navbar {
@@ -23,6 +43,15 @@ navbar {
     position: relative;
     z-index: 10;
     width: 100%;
+}
+main navbar .armenian {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1vw;
+    font-family: mainFontArm;
+}
+main navbar  .russian {
+    font-family: mainFont;
 }
 navbar a {
     padding: 1% 0%;
@@ -246,4 +275,18 @@ footer {
     footer {
         height: 60px;
     }
+}
+.russian {
+    display: none;
+}
+.buttonSeparator {
+    display: inline-block;
+    width: 1px;
+    height: 1.6%;
+    background-color: #455A64;
+}
+.languageButton {
+    background-color: transparent;
+    border: none;
+    color: #78909C;
 }

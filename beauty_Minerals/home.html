@@ -11,18 +11,25 @@
 <main>
 <navbar id="navbar" class="navbar">
     <a class="menuItem menuLogo" id="menuLogo" href="home.html"><img src="images/logo.png" id="logo" /></a>
-    <a class="menuItem menuContext" href="home.html">ГЛАВНАЯ</a>
-    <a class="menuItem menuContext" href="3catalog/catalog.html">КАТАЛОГ</a>
-    <a class="menuItem menuContext" href="2aboutUs/aboutUs.html">О НАС</a>
-    <a class="menuItem menuContext" href="4contactUs/contactUs.html">КОНТАКТЫ</a>
+    <a class="menuItem menuContext" href="home.html"><p class="russian">ГЛАВНАЯ</p><p class="armenian">ԳԼԽԱՎՈՐ</p></a>
+    <a class="menuItem menuContext" href="3catalog/catalog.html"><p class="russian">КАТАЛОГ</p><p class="armenian">ԿԱՏԱԼՈԳ</p></a>
+    <a class="menuItem menuContext" href="2aboutUs/aboutUs.html"><p class="russian">О НАС</p><p class="armenian">ՄԵՐ ՄԱՍԻՆ</p></a>
+    <a class="menuItem menuContext" href="4contactUs/contactUs.html"><p class="russian">КОНТАКТЫ</p><p class="armenian">ԿՈՆՏԱԿՏՆԵՐ</p></a>
+    <a>
+        <button class="languageButton" id="armenian" onclick="languageArmenian()">ՀԱՅ</button>
+        <div class="buttonSeparator"></div>
+        <button class="languageButton" id="russian" onclick="languageRussian()">РУС</button>
+    </a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
     </a>
-</navbar>   
+</navbar>
+    
 <div class="slideshowContainer">
     <div class="mySlides fade">
         <img class="slideImg" src="1home/images/large.jpg">
-        <p class="textOnImg">Натуральная Косметика Мертвого Моря</p>
+        <p class="textOnImg russian">Натуральная Косметика Мертвого Моря</p>
+        <p class="textOnImg armenian">Հետաքրքրական է, որ տեքստը գրեթե լիովին</p>
     </div>
 
     <div class="mySlides fade">
@@ -57,7 +64,8 @@
             <img src="1home/images/face.jpg" alt="ForFace">
             <div class="overlay">
                 <div class="centeredProductText">
-                    <p>ДЛЯ ЛИЦА</p>
+                    <p class="russian">ДЛЯ ЛИЦА</p>
+                    <p class="armenian">գրեթե լիովին</p>
                 </div>
             </div>
         </div>
@@ -69,7 +77,8 @@
             <img src="1home/images/body.jpg" alt="ForBody">
             <div class="overlay">
                 <div class="centeredProductText">
-                    <p>ДЛЯ ТЕЛА</p>
+                    <p class="russian">ДЛЯ ТЕЛА</p>
+                    <p class="armenian">գրեթե լիովին</p>
                 </div>
             </div>
         </div>
@@ -81,7 +90,8 @@
             <img src="1home/images/hair.jpg" alt="ForHair">
             <div class="overlay">
                 <div class="centeredProductText">
-                    <p>ДЛЯ ВОЛОС</p>
+                    <p class="russian">ДЛЯ ВОЛОС</p>
+                    <p class="armenian">գրեթե լիովին</p>
                 </div>
             </div>
         </div>
@@ -93,7 +103,8 @@
             <img src="1home/images/man.jpg" alt="ForMen">
             <div class="overlay">
                 <div class="centeredProductText">
-                    <p>ДЛЯ МУЖЧИН</p>
+                    <p class="russian">ДЛЯ МУЖЧИН</p>
+                    <p class="armenian">գրեթե լիովին</p>
                 </div>
             </div>
         </div>
@@ -107,7 +118,8 @@
             <img src="1home/images/present.jpg" alt="Presents">
             <div class="overlay">
                 <div class="centeredProductText">
-                    <p>ПОДАРОЧНЫЕ НАБОРЫ</p>
+                    <p class="russian">ПОДАРОЧНЫЕ НАБОРЫ</p>
+                    <p class="armenian">գրեթե լիովինգ լիովին</p>
                 </div>
             </div>
         </div>
@@ -121,175 +133,213 @@
     <div class="mySlidesBig fade">
        <div class="content">
             <img src="1home/images/101-ochishchayushchij-tonik-dlya-lica-i-oblasti-dekolte-s-ehkstraktami-annony-aloe-vera-i-konskogo-kashtana-dlya-kombinirovannoj-i-zhirnoj-kozhi-300x300.jpg">
-            <p>ОЧИЩАЮЩИЙ ТОНИК ДЛЯ ЛИЦА И ОБЛАСТИ ДЕКОЛЬТЕ С ЭКСТРАКТАМИ АННОНЫ, АЛОЕ ВЕРА И КОНСКОГО КАШТАНА.</p>
+            <p class="russian">ОЧИЩАЮЩИЙ ТОНИК ДЛЯ ЛИЦА И ОБЛАСТИ ДЕКОЛЬТЕ С ЭКСТРАКТАМИ АННОНЫ, АЛОЕ ВЕРА И КОНСКОГО КАШТАНА.</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում են այն հրատարակություններից, որոնցում</p>
         </div>
        <div class="content">
             <img src="1home/images/102-ochishchayushchij-tonik-dlya-lica-i-oblasti-dekolte-s-ehkstraktami-annony-aloe-vera-i-saponarii-dlya-normalnoj-i-suhoj-kozhi-300x300.jpg">
-            <p>Тоник очищающий для лица и области декольте с экстрактами анноны, алое вера и сапонарии Предназначен для очищения кожи нормального и сухого типов.</p>
+            <p class="russian">Тоник очищающий для лица и области декольте с экстрактами анноны, алое вера и сапонарии Предназначен для очищения кожи нормального и сухого типов.</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում են այն հրատարակություններից, որոնցում կա տեքստ</p>
         </div>
        <div class="content">
             <img src="1home/images/103-kosmeticheskoe-molochko-dlya-snyatiya-makiyazha-dlya-vsekh-tipov-kozhi-300x300.jpg">
-            <p>КОСМЕТИЧЕСКОЕ МОЛОЧКО ДЛЯ ВСЕХ ТИПОВ КОЖИ</p>
+            <p class="russian">КОСМЕТИЧЕСКОЕ МОЛОЧКО ДЛЯ ВСЕХ ТИПОВ КОЖИ</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում</p>
         </div>		
        <div class="content">
             <img src="1home/images/104-gel-dlya-umyvaniya-lica-i-oblasti-dekolte-s-ehkstraktom-annony-i-maslom-greckogo-orekha-500x500.jpg">
-            <p>ГЕЛЬ ДЛЯ УМЫВАНИЯ ЛИЦА И ОБЛАСТИ ДЕКОЛЬТЕ. xДЛЯ ВСЕХ ТИПОВ КОЖИ</p>
+            <p class="russian">ГЕЛЬ ДЛЯ УМЫВАНИЯ ЛИЦА И ОБЛАСТИ ДЕКОЛЬТЕ. xДЛЯ ВСЕХ ТИПОВ КОЖИ</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում են այն հրատարակություններից, որոնցում կա տեքստ</p>
         </div>
     </div>
     <div class="mySlidesBig fade">
        <div class="content">
             <img src="1home/images/105-syvorotka-dlya-oblastej-vokrug-glaz-s-ehffektom-uvlazhneniya-liftinga-umensheniya-glubiny-morshchin-v-problemnyh-zonah-dlya-vsekh-tipov-kozhi-500x500.jpg">
-            <p>СЫВОРОТКА ДЛЯ ОБЛАСТЕЙ ВОКРУГ ГЛАЗ С ЭФФЕКТОМ УВЛАЖНЕНИЯ, ЛИФТИНГА, УМЕНЬШЕНИЯ ГЛУБИНЫ МОРЩИН В ПРОБЛЕМНЫХ ЗОНАХ ДЛЯ ВСЕХ ТИПОВ КОЖИ</p>
+            <p class="russian">СЫВОРОТКА ДЛЯ ОБЛАСТЕЙ ВОКРУГ ГЛАЗ С ЭФФЕКТОМ УВЛАЖНЕНИЯ, ЛИФТИНГА, УМЕНЬШЕНИЯ ГЛУБИНЫ МОРЩИН В ПРОБЛЕМНЫХ ЗОНАХ ДЛЯ ВСЕХ ТИПОВ КОЖИ</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում են այն հրատարակություններից, որոնցում կա տեքստ</p>
         </div>
        <div class="content">
             <img src="1home/images/106-lifting-kompoziciya-nezhnyj-doktor-dlya-lica-i-oblasti-dekolte-dlya-vsekh-tipov-kozhi-300x300.jpg">
-            <p>ЛИФТИНГ КОМПОЗИЦИЯ “НЕЖНЫЙ ДОКТОР”. ДЛЯ ВСЕХ ТИПОВ КОЖИ</p>
+            <p class="russian">ЛИФТИНГ КОМПОЗИЦИЯ “НЕЖНЫЙ ДОКТОР”. ДЛЯ ВСЕХ ТИПОВ КОЖИ</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում են այն հրատարակություններից, որոնցում կա տեքստ</p>
         </div>
        <div class="content">
             <img src="1home/images/107-uvlazhnyayushchij-krem-vokrug-glaz-protiv-morshchin-dlya-vsekh-tipov-kozhi-500x500.jpg">
-            <p>УВЛАЖНЯЮЩИЙ КРЕМ ВОКРУГ ГЛАЗ ПРОТИВ МОРЩИН. ДЛЯ ВСЕХ ТИПОВ КОЖИ</p>
+            <p class="russian">УВЛАЖНЯЮЩИЙ КРЕМ ВОКРУГ ГЛАЗ ПРОТИВ МОРЩИН. ДЛЯ ВСЕХ ТИПОВ КОЖИ</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում են այն հրատարակություններից, որոնցում կա տեքստ</p>
         </div>
        <div class="content">
             <img src="1home/images/108-krem-nochnoj-uvlazhnyayushchij-i-pitatelnyj-s-ehffektom-liftinga-dlya-lica-i-oblasti-dekolte-dlya-normalnoj-i-suhoj-kozhi-500x500.jpg">
-            <p>УВЛАЖНЯЮЩИЙ И ПИТАТЕЛЬНЫЙ КРЕМ ДЛЯ ЛИЦА И ОБЛАСТИ ДЕКОЛЬТЕ. НОЧНОЙ ДЛЯ НОРМАЛЬНОЙ И СУХОЙ КОЖИ</p>
+            <p class="russian">УВЛАЖНЯЮЩИЙ И ПИТАТЕЛЬНЫЙ КРЕМ ДЛЯ ЛИЦА И ОБЛАСТИ ДЕКОЛЬТЕ. НОЧНОЙ ДЛЯ НОРМАЛЬНОЙ И СУХОЙ КОЖИ</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում են այն հրատարակություններից, որոնցում կա տեքստ</p>
         </div>
     </div>
     <div class="mySlidesBig fade">
          <div class="content">
             <img src="1home/images/112-krem-dnevnoj-uvlazhnyayushchij-i-pitayushchij-s-ehffektom-matirovaniya-spf-15-dlya-kombinirovannoj-i-zhirnoj-kozhi-500x500.jpg">
-            <p>КРЕМ ДНЕВНОЙ ДЛЯ КОМБИНИРОВАННОЙ И ЖИРНОЙ КОЖИ</p>
+            <p class="russian">КРЕМ ДНЕВНОЙ ДЛЯ КОМБИНИРОВАННОЙ И ЖИРНОЙ КОЖИ</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում են այն հրատարակություններից, որոնցում կա տեքստ</p>
         </div>
        <div class="content">
             <img src="1home/images/109-krem-nochnoj-uvlazhnyayushchij-i-pitatelnyj-dlya-lica-i-oblasti-dekolte-s-ehkstraktom-annony-aloe-vera-i-zelenogo-kofe-dlya-kombinirovannoj-i-zhirnoj-kozhi-500x500.jpg">
-            <p>УВЛАЖНЯЮЩИЙ И ПИТАТЕЛЬНЫЙ КРЕМ ДЛЯ ЛИЦА И ОБЛАСТИ ДЕКОЛЬТЕ. КРЕМ НОЧНОЙ ДЛЯ КОМБИНИРОВАННОЙ И ЖИРНОЙ КОЖИ</p>
+            <p class="russian">УВЛАЖНЯЮЩИЙ И ПИТАТЕЛЬНЫЙ КРЕМ ДЛЯ ЛИЦА И ОБЛАСТИ ДЕКОЛЬТЕ. КРЕМ НОЧНОЙ ДЛЯ КОМБИНИРОВАННОЙ И ЖИРНОЙ КОЖИ</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում են այն հրատարակություններից, որոնցում կա տեքստ</p>
         </div>
        <div class="content">
             <img src="1home/images/1101-nabor-1-kompleksnyj-uhod-dlya-normalnoj-i-suhoj-kozhi_2-500x500.jpg">
-            <p>НАБОР №1. КОМПЛЕКСНЫЙ УХОД. ДЛЯ НОРМАЛЬНОЙ И СУХОЙ КОЖИ</p>
+            <p class="russian">НАБОР №1. КОМПЛЕКСНЫЙ УХОД. ДЛЯ НОРМАЛЬНОЙ И СУХОЙ КОЖИ</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում են այն հրատարակություններից, որոնցում կա տեքստ</p>
         </div>
        <div class="content">
             <img src="1home/images/1102-nabor-2-lifting-kompoziciya-dlya-vsekh-tipov-i-normalnoj-i-suhoj-kozhi_2-500x500.jpg">
-            <p>НАБОР №2. ЛИФТИНГ КОМПОЗИЦИЯ. ДЛЯ НОРМАЛЬНОЙ И СУХОЙ КОЖИ</p>
+            <p class="russian">НАБОР №2. ЛИФТИНГ КОМПОЗИЦИЯ. ДЛЯ НОРМАЛЬНОЙ И СУХОЙ КОЖИ</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում</p>
         </div>
     </div>
     <div class="mySlidesBig fade">
         <div class="content">
             <img src="1home/images/1103-nabor-3-kompleksnyj-uhod-dlya-kombinirovannoj-i-zhirnoj-kozhi_2-500x500.jpg">
-          <p>НАБОР №3. КОМПЛЕКСНЫЙ УХОД. ДЛЯ КОМБИНИРОВАННОЙ И ЖИРНОЙ КОЖИ</p>
+          <p class="russian">НАБОР №3. КОМПЛЕКСНЫЙ УХОД. ДЛЯ КОМБИНИРОВАННОЙ И ЖИРНОЙ КОЖИ</p>
+          <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում են</p>
         </div>
         
        <div class="content">
             <img src="1home/images/1104-nabor-4-ochishchenie-i-uhod-dlya-kombinirovannoj-i-zhirnoj-kozhi_2-500x500.jpg">
-            <p>НАБОР №4. ОЧИЩЕНИЕ И УХОД. ДЛЯ КОМБИНИРОВАННОЙ И ЖИРНОЙ КОЖИ</p>
+            <p class="russian">НАБОР №4. ОЧИЩЕНИЕ И УХОД. ДЛЯ КОМБИНИРОВАННОЙ И ЖИРНОЙ КОЖИ</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում են</p>
         </div>
        <div class="content">
             <img src="1home/images/1105-nabor-5-antivozrastnoj-kompleks-dlya-normalnoj-i-suhoj-kozhi_2-500x500.jpg">
-            <p>НАБОР №5. АНТИВОЗРАСТНОЙ КОМПЛЕКС. ДЛЯ НОРМАЛЬНОЙ И СУХОЙ КОЖИ</p>
+            <p class="russian">НАБОР №5. АНТИВОЗРАСТНОЙ КОМПЛЕКС. ДЛЯ НОРМАЛЬНОЙ И СУХОЙ КОЖИ</p>
+            <p class="armenian">НՆույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում</p>
         </div>			
        <div class="content">
             <img src="1home/images/1106-nabor-6-ochishchenie-i-uvlazhnenie-dlya-normalnoj-i-suhoj-kozhi_2-500x500.jpg">
-            <p>НАБОР №6. ОЧИЩЕНИЕ И УВЛАЖНЕНИЕ. ДЛЯ НОРМАЛЬНОЙ И СУХОЙ КОЖИ</p>
+            <p class="russian">НАБОР №6. ОЧИЩЕНИЕ И УВЛАЖНЕНИЕ. ДЛЯ НОРМАЛЬНОЙ И СУХОЙ КОЖИ</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում են</p>
         </div>
     </div>
     <div class="mySlidesBig fade">
        <div class="content">
             <img src="1home/images/1107-nabor-7-glubokoe-ochishchenie-dlya-normalnoj-i-suhoj-kozhi_2-500x500.jpg">
-            <p>ННАБОР №7. ГЛУБОКОЕ ОЧИЩЕНИЕ. ДЛЯ НОРМАЛЬНОЙ И СУХОЙ КОЖИ</p>
+            <p class="russian">ННАБОР №7. ГЛУБОКОЕ ОЧИЩЕНИЕ. ДЛЯ НОРМАЛЬНОЙ И СУХОЙ КОЖИ</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում</p>
         </div>
        <div class="content">
             <img src="1home/images/1108-nabor-8-glubokoe-ochishchenie-dlya-kombinirovannoj-i-zhirnoj-kozhi_2-500x500.jpg">
-            <p>НАБОР №8. ГЛУБОКОЕ ОЧИЩЕНИЕ. ДЛЯ КОМБИНИРОВАННОЙ И ЖИРНОЙ КОЖИ</p>
+            <p class="russian">НАБОР №8. ГЛУБОКОЕ ОЧИЩЕНИЕ. ДЛЯ КОМБИНИРОВАННОЙ И ЖИРНОЙ КОЖИ</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում են այն</p>
         </div>
        <div class="content">
             <img src="1home/images/1109-nabor-9-lifting-kompleks-dlya-vsekh-tipov-i-normalnoj-i-suhoj-kozhi_2-300x300.jpg">
-            <p>НАБОР №9. ЛИФТИНГ КОМПЛЕКС. ДЛЯ НОРМАЛЬНОЙ И СУХОЙ КОЖИ</p>
+            <p class="russian">НАБОР №9. ЛИФТИНГ КОМПЛЕКС. ДЛЯ НОРМАЛЬНОЙ И СУХОЙ КОЖИ</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում</p>
         </div>
        <div class="content">
             <img src="1home/images/111-krem-dnevnoj-uvlazhnyayushchij-i-matiruyushchij-spf15-s-ehkstraktami-annony-i-gotu-kola-centella-aziatika-dlya-normalnoj-i-suhoj-kozhi-300x300.jpg">
-            <p>КРЕМ ДНЕВНОЙ УВЛАЖНЯЮЩИЙ И МАТИРУЮЩИЙ. ДЛЯ НОРМАЛЬНОЙ И СУХОЙ КОЖИ</p>
+            <p class="russian">КРЕМ ДНЕВНОЙ УВЛАЖНЯЮЩИЙ И МАТИРУЮЩИЙ. ДЛЯ НОРМАЛЬНОЙ И СУХОЙ КОЖИ</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում են այն հրատարակություններից, որոնցում կա տեքստ</p>
         </div>
     </div>
     <div class="mySlidesBig fade">
        <div class="content">
             <img src="1home/images/116-uspokaivayushchij-gel-dlya-legkogo-britya-dlya-vsekh-tipov-kozhi-500x500.jpg">
-            <p>Легкий гель со сбалансированной формулой, содержащей все необходимые растительные компоненты для бритья без раздражений и других неприятных ощущений.</p>
+            <p class="russian">Легкий гель со сбалансированной формулой, содержащей все необходимые растительные компоненты для бритья без раздражений и других неприятных ощущений.</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում են այն հրատարակություններից, որոնցում կա տեքստ</p>
         </div>
        <div class="content">
             <img src="1home/images/117-balzam-posle-britya-uvlazhnyayushchij-i-toniziruyushchij-dlya-vsekh-tipov-kozhi-500x500.jpg">
-            <p>Хорошо увлажняющий и тонизирующий бальзам, заживляет мелкие ранки и царапины. Кожа после его применения выглядит здоровой, сияющей.</p>
+            <p class="russian">Хорошо увлажняющий и тонизирующий бальзам, заживляет мелкие ранки и царапины. Кожа после его применения выглядит здоровой, сияющей.</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում են այն հրատարակություններից, որոնցում կա տեքստ</p>
         </div>
        <div class="content">
             <img src="1home/images/2101-nabor-10-uhod-za-telom-dlya-vsekh-tipov-kozhi_2-500x500.jpg">
-            <p>НАБОР №10. УХОД ЗА ТЕЛОМ.</p>
+            <p class="russian">НАБОР №10. УХОД ЗА ТЕЛОМ.</p>
+            <p class="armenian">НՆույն ձեւով էլ այն մարդիկ</p>
         </div>					
        <div class="content">
             <img src="1home/images/2102-nabor-11-kompleksnyj-uhod-za-telom-dlya-vsekh-tipov-kozhi_2-500x500.jpg">
-            <p>НАБОР №11. КОМПЛЕКСНЫЙ УХОД ЗА ТЕЛОМ. ДЛЯ ВСЕХ ТИПОВ КОЖИ</p>
+            <p class="russian">НАБОР №11. КОМПЛЕКСНЫЙ УХОД ЗА ТЕЛОМ. ДЛЯ ВСЕХ ТИПОВ КОЖИ</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում են</p>
         </div>
     </div>
     <div class="mySlidesBig fade">
        <div class="content">
             <img src="1home/images/4101-nabor-17-dlya-muzhchin-dlya-vsekh-tipov-kozhi_2-500x500.jpg">
-            <p>НАБОР №17. ДЛЯ МУЖЧИН.</p>
+            <p class="russian">НАБОР №17. ДЛЯ МУЖЧИН.</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում</p>
         </div>
        <div class="content">
             <img src="1home/images/4102-nabor-18-dlya-muzhchin-dlya-vsekh-tipov-kozhi_2-500x500.jpg">
-            <p>НАБОР №18. ДЛЯ МУЖЧИН.</p>
+            <p class="russian">НАБОР №18. ДЛЯ МУЖЧИН.</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում.</p>
         </div>
        <div class="content">
             <img src="1home/images/202-krem-dlya-ruk-i-nogtej-pitatelnyj-i-uvlazhnyayushchij-s-ehkstraktom-annony-i-maslom-greckogo-orekha-500x500.jpg">
-            <p>КРЕМ ДЛЯ РУК И НОГТЕЙ, ПИТАТЕЛЬНЫЙ И УВЛАЖНЯЮЩИЙ, С ЭКСТРАКТОМ АННОНЫ И МАСЛОМ ГРЕЦКОГО ОРЕХА</p>
+            <p class="russian">КРЕМ ДЛЯ РУК И НОГТЕЙ, ПИТАТЕЛЬНЫЙ И УВЛАЖНЯЮЩИЙ, С ЭКСТРАКТОМ АННОНЫ И МАСЛОМ ГРЕЦКОГО ОРЕХА</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում են այն հրատարակություններից, որոնցում կա տեքստ</p>
         </div>
     </div>
     <div class="mySlidesBig fade">
        <div class="content">
             <img src="1home/images/203-krem-muss-dlya-tela-uvlazhnyayushchij-i-pitatelnyj-s-ehkstraktami-annony-mango-i-maslom-greckogo-orekha-500x500.jpg">
-            <p>КРЕМ-МУСС ДЛЯ ТЕЛА УВЛАЖНЯЮЩИЙ И ПИТАТЕЛЬНЫЙ. С ЭКСТРАКТАМИ АННОНЫ, МАНГО И МАСЛОМ ГРЕЦКОГО ОРЕХА</p>
+            <p class="russian">КРЕМ-МУСС ДЛЯ ТЕЛА УВЛАЖНЯЮЩИЙ И ПИТАТЕЛЬНЫЙ. С ЭКСТРАКТАМИ АННОНЫ, МАНГО И МАСЛОМ ГРЕЦКОГО ОРЕХА</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում են այն հրատարակություններից, որոնցում կա տեքստ</p>
         </div>
        <div class="content">
             <img src="1home/images/204-toniziruyushchij-skrab-dlya-tela-s-ehkstraktami-annony-kofe-i-maslom-greckogo-orekha-500x500.jpg">
-            <p>ТОНИЗИРУЮЩИЙ СКРАБ ДЛЯ ТЕЛА С ЭКСТРАКТАМИ АННОНЫ, КОФЕ И МАСЛОМ ГРЕЦКОГО ОРЕХА</p>
+            <p class="russian">ТОНИЗИРУЮЩИЙ СКРАБ ДЛЯ ТЕЛА С ЭКСТРАКТАМИ АННОНЫ, КОФЕ И МАСЛОМ ГРЕЦКОГО ОРЕХА</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում են այն հրատարակություններից, որոնցում կա տեքստ</p>
         </div>
        <div class="content">
             <img src="1home/images/205-uvlazhnyayushchij-gel-dlya-dusha-s-ehkstraktom-annony-kofe-i-maslom-greckogo-orekha-500x500.jpg">
-            <p>УВЛАЖНЯЮЩИЙ ГЕЛЬ ДЛЯ ДУША С ЭКСТРАКТОМ АННОНЫ, КОФЕ И МАСЛОМ ГРЕЦКОГО ОРЕХА</p>
+            <p class="russian">УВЛАЖНЯЮЩИЙ ГЕЛЬ ДЛЯ ДУША С ЭКСТРАКТОМ АННОНЫ, КОФЕ И МАСЛОМ ГРЕЦКОГО ОРЕХА</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում են այն հրատարակություններից, որոնցում կա տեքստ</p>
         </div>
        <div class="content">
             <img src="1home/images/301-ukreplyayushchij-i-ozdoravlivayushchij-shampun-s-ehkstraktami-annony-skorlupy-greckogo-orekha-i-maslom-greckogo-orekha-dlya-vsekh-tipov-volos-500x500.jpg">
-            <p>УКРЕПЛЯЮЩИЙ И ОЗДОРАВЛИВАЮЩИЙ ШАМПУНЬ С ЭКСТРАКТАМИ АННОНЫ, СКОРЛУПЫ ГРЕЦКОГО ОРЕХА И МАСЛОМ ГРЕЦКОГО ОРЕХА</p>
+            <p class="russian">УКРЕПЛЯЮЩИЙ И ОЗДОРАВЛИВАЮЩИЙ ШАМПУНЬ С ЭКСТРАКТАМИ АННОНЫ, СКОРЛУПЫ ГРЕЦКОГО ОРЕХА И МАСЛОМ ГРЕЦКОГО ОРЕХА</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում են այն հրատարակություններից, որոնցում կա տեքստ</p>
         </div>
     </div>
     <div class="mySlidesBig fade">
        <div class="content">
             <img src="1home/images/302-shampun-s-gryazyu-mertvogo-morya-ehkstraktom-annony-i-maslom-greckogo-orekha-dlya-vsekh-tipov-volos-500x500.jpg">
-            <p>ШАМПУНЬ С ГРЯЗЬЮ МЕРТВОГО МОРЯ, ДЛЯ ВСЕХ ТИПОВ ВОЛОС ЭКСТРАКТОМ АННОНЫ И МАСЛОМ ГРЕЦКОГО ОРЕХА
+            <p class="russian">ШАМПУНЬ С ГРЯЗЬЮ МЕРТВОГО МОРЯ, ДЛЯ ВСЕХ ТИПОВ ВОЛОС ЭКСТРАКТОМ АННОНЫ И МАСЛОМ ГРЕЦКОГО ОРЕХА
             ДЛЯ ВСЕХ ТИПОВ ВОЛОС</p>
+           <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում են այն հրատարակություններից, որոնցում կա տեքստ</p>
         </div>
        <div class="content">
             <img src="1home/images/303-shampun-dlya-suhih-i-chasto-okrashennyh-volos-s-ehkstraktom-annony-i-maslami-greckogo-orekha-i-oblepihi-500x500.jpg">
-            <p>ШАМПУНЬ ДЛЯ СУХИХ И ЧАСТО ОКРАШЕННЫХ ВОЛОС С ЭКСТРАКТОМ АННОНЫ И МАСЛАМИ ГРЕЦКОГО ОРЕХА И ОБЛЕПИХИ</p>
+            <p class="russian">ШАМПУНЬ ДЛЯ СУХИХ И ЧАСТО ОКРАШЕННЫХ ВОЛОС С ЭКСТРАКТОМ АННОНЫ И МАСЛАМИ ГРЕЦКОГО ОРЕХА И ОБЛЕПИХИ</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում են այն հրատարակություններից, որոնցում կա տեքստ</p>
         </div>
        <div class="content">
             <img src="1home/images/304-shampun-ot-perhoti-s-ehkstraktami-annony-aloe-vera-rozmarina-i-maslom-greckogo-orekha-500x500.jpg">
-            <p>ШАМПУНЬ ОТ ПЕРХОТИ С ЭКСТРАКТАМИ АННОНЫ, АЛОЕ ВЕРА, РОЗМАРИНА И МАСЛОМ ГРЕЦКОГО ОРЕХА</p>
+            <p class="russian">ШАМПУНЬ ОТ ПЕРХОТИ С ЭКСТРАКТАМИ АННОНЫ, АЛОЕ ВЕРА, РОЗМАРИНА И МАСЛОМ ГРЕЦКОГО ОРЕХА</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում են այն հրատարակություններից, որոնցում կա տեքստ</p>
         </div>					
        <div class="content">
             <img src="1home/images/305-kondicioner-dlya-volos-s-ehkstraktom-annony-i-maslom-greckogo-orekha-dlya-vsekh-tipov-volos-500x500.jpg">
-            <p>КОНДИЦИОНЕР ДЛЯ ВОЛОС С ЭКСТРАКТОМ АННОНЫ И МАСЛОМ ГРЕЦКОГО ОРЕХА</p>
+            <p class="russian">КОНДИЦИОНЕР ДЛЯ ВОЛОС С ЭКСТРАКТОМ АННОНЫ И МАСЛОМ ГРЕЦКОГО ОРЕХА</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում են այն հրատարակություններից, որոնցում կա տեքստ</p>
         </div>
     </div>
     <div class="mySlidesBig fade">
        <div class="content">
             <img src="1home/images/306-maska-dlya-volos-s-gryazyu-mertvogo-morya-ehkstraktnom-annony-i-maslom-greckogo-orekha-500x500.jpg">
-            <p>МАСКА ДЛЯ ВОЛОС С ГРЯЗЬЮ МЕРТВОГО МОРЯ. ЭКСТРАКТНОМ АННОНЫ И МАСЛОМ ГРЕЦКОГО ОРЕХА </p>
+            <p class="russian">МАСКА ДЛЯ ВОЛОС С ГРЯЗЬЮ МЕРТВОГО МОРЯ. ЭКСТРАКТНОМ АННОНЫ И МАСЛОМ ГРЕЦКОГО ОРЕХА </p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում են այն հրատարակություններից, որոնցում կա տեքստ</p>
         </div>
        <div class="content">
             <img src="1home/images/307-maska-dlya-suhih-chasto-okrashivaemyh-volos-s-ehkstraktom-annony-i-maslami-greckogo-orekha-i-oblepihi-500x500.jpg">
-            <p>ВОССТАНАВЛИВАЮЩАЯ МАСКА ДЛЯ ВОЛОС. ДЛЯ ВСЕХ ТИПОВ ВОЛОС</p>
+            <p class="russian">ВОССТАНАВЛИВАЮЩАЯ МАСКА ДЛЯ ВОЛОС. ДЛЯ ВСЕХ ТИПОВ ВОЛОС</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում են այն հրատարակություններից, որոնցում կա տեքստ</p>
         </div>
        <div class="content">
             <img src="1home/images/308-vosstanavlivayushchaya-maska-dlya-volos-dlya-vsekh-tipov-volos-500x500.jpg">
-            <p>ВОССТАНАВЛИВАЮЩАЯ МАСКА ДЛЯ ВОЛОС. ДЛЯ ВСЕХ ТИПОВ ВОЛОС</p>
+            <p class="russian">ВОССТАНАВЛИВАЮЩАЯ МАСКА ДЛЯ ВОЛОС. ДЛЯ ВСЕХ ТИПОВ ВОЛОС</p>
+            <p class="armenian">Նույն ձեւով էլ այն մարդիկ, ովքեր չեն կարողանում կարդալ, խուսափում են այն հրատարակություններից, որոնցում կա տեքստ</p>
         </div>
     </div>
     <a class="prevBig" onclick="plusSlidesBig(-1)">&#10094;</a>
@@ -323,7 +373,30 @@
     </div>
 </footer>
 </body>
-<script></script>
+<script>
+function languageArmenian() {
+    console.log('stexes')
+    var russianWords = document.getElementsByClassName('russian');
+    var armenianWords = document.getElementsByClassName('armenian');
+    for(let i = 0; i < russianWords.length; i++) {
+        russianWords[i].style.display = 'none';
+    }   
+    for(let i = 0; i < armenianWords.length; i++) {
+        armenianWords[i].style.display = 'block';
+    }
+}
+function languageRussian() {
+        console.log('stexes')
+    var russianWords = document.getElementsByClassName('russian');
+    var armenianWords = document.getElementsByClassName('armenian');
+    for(let i = 0; i < russianWords.length; i++) {
+        russianWords[i].style.display = 'block';
+    }   
+    for(let i = 0; i < armenianWords.length; i++) {
+        armenianWords[i].style.display = 'none';
+    }
+}
+</script>
 <script>
 //responsive navbar code
 function myFunction() {
