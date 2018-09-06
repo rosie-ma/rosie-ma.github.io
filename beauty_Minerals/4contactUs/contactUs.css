@@ -88,7 +88,6 @@ navbar .icon {
     display: flex;
     justify-content: center;
 }
-
 .contactContainer {
     display: flex;
     justify-content: center;
@@ -156,7 +155,6 @@ navbar .icon {
 #map >  div {
     position: relative !important;
 }
-
 #map{
     width: 100%;
 }

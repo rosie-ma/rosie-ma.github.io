@@ -81,11 +81,6 @@ navbar a {
 navbar .icon {
     display: none;
 }
-.languageButton {
-    background-color: transparent;
-    border: none;
-    color: #78909C;
-}
 .buttonSeparator {
     display: inline-block;
     width: 1px;
@@ -150,7 +145,6 @@ navbar .icon {
     background-clip: text;
     text-fill-color: transparent;
 }
-
 .btn.active {
     color: #311e18;
     font-weight: bolder;
@@ -314,7 +308,6 @@ footer {
     align-items: center;
     display: flex;
 }
-
 .modalContentCaption {
     background-color: #f0eff5;
     font-size: 1.4vw;
@@ -332,7 +325,6 @@ footer {
     align-items: center;
     display: flex;
 }
-
 
 @media screen and (max-width: 800px) {
     navbar {
@@ -411,6 +403,11 @@ footer {
 }
 .russian {
     display: none;
+}
+.languageButton {
+    background-color: transparent;
+    border: none;
+    color: #78909C;
 }
 .buttonSeparator {
     display: inline-block;

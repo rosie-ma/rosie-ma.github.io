@@ -155,11 +155,13 @@ navbar .icon {
 .contentLeftIngridient > img:hover, .contentRightIngridient > img:hover {
     transform: scale(1.2);
 }
+
 .doubleLine {    
     margin: 0 auto;
     width: 70%;
     border-top: 2px solid #455A64;
 }
+
 .caption {
     padding: 1%;
     font-size: 3vw;
