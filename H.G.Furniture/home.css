@@ -321,7 +321,7 @@ footer {
     display: none;
     position: fixed;
     z-index: 99999;
-    padding-top: 100px;
+    padding-top: 9%;
     left: 0;
     top: 0;
     width: 100%;
@@ -345,7 +345,7 @@ footer {
     font-family: company, cursive;
 }
 .modal p {
-    overflow: scroll;
+    overflow: auto;
     text-align: justify;
     padding: 3%;
     color: #757575;
@@ -424,5 +424,8 @@ footer {
     }
     .downButton {
         display: none;
+    }
+    .modal {
+        padding-top: 3%;
     }
 }

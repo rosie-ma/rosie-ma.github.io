@@ -28,6 +28,7 @@ main .russian {
     font-family: contentFont;
 }
 main .armenian {
+    line-height: 180%;
     font-style: italic;
     font-weight: 100;
     font-family: contentFontArm;
@@ -110,7 +111,7 @@ navbar .icon {
     float: right;
     max-width: 15%;
     max-height: 35%;
-    padding: 1% 1% 1% 4%;
+    padding: 1% 5% 1% 4%;
 }
 .contentLogoImg > img {
     transition: all .8s ease-in-out;
@@ -289,6 +290,9 @@ footer {
 .creditCards {
     display: flex;
     justify-content: center;
+}
+.footerContent .websiteIcons i {
+    color: #2f4048;
 }
 .websiteIcons {
     color: #2f4048;

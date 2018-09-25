@@ -29,7 +29,7 @@ main .russian {
 }
 main .armenian {
     font-style: italic;
-    font-weight: 100;
+    font-weight: bold;
     font-family: contentFontArm;
 }
 
@@ -112,7 +112,7 @@ navbar .icon {
     box-shadow: 0px 0px 3px #3b3a36;
     text-align: center;
     background-color: #fff;
-    padding: 5% 5% 15% 5%;
+    padding: 5% 5% 20% 5%;
 }
 .content img {
     max-width: 65%;
@@ -197,6 +197,9 @@ footer {
 .creditCards {
     display: flex;
     justify-content: center;
+}
+.footerContent .websiteIcons i {
+    color: #2f4048;
 }
 .websiteIcons {
     color: #2f4048;

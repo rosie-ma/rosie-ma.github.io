@@ -120,6 +120,7 @@ navbar .icon {
 .contactBox .icon {
     text-align: center;
     color: #37474f;
+    color: #37474f;
     font-size: 3vw;
     width: 25%;
 }
@@ -189,6 +190,9 @@ footer {
 .creditCards {
     display: flex;
     justify-content: center;
+}
+.footerContent .websiteIcons i {
+    color: #2f4048;
 }
 .websiteIcons {
     display: flex;

@@ -125,18 +125,30 @@ navbar .icon {
 }
 @-webkit-keyframes fade {
   from {
-      opacity: .4
+      opacity: .4;
+      -moz-opacity: .4;
+      -khtml-opacity: .4;
+      filter: alpha(opacity = .4);
     } 
   to {
-      opacity: 1
+      opacity: 1;
+      -moz-opacity: 1;
+      -khtml-opacity: 1;
+      filter: alpha(opacity = 1);
     }
 }
 @keyframes fade {
   from {
-      opacity: .4
+      opacity: .4;
+      -moz-opacity: .4;
+      -khtml-opacity: .4;
+      filter: alpha(opacity = .4);
     } 
   to {
-      opacity: 1
+      opacity: 1;
+      -moz-opacity: 1;
+      -khtml-opacity: 1;
+      filter: alpha(opacity = 1);
     }
 }
 .slideImg {
@@ -319,8 +331,10 @@ footer {
     display: flex;
     justify-content: center;
 }
-.websiteIcons {
+.footerContent .websiteIcons i {
     color: #2f4048;
+}
+.websiteIcons {
     display: flex;
     justify-content: center;
 }
