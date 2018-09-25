@@ -216,6 +216,7 @@ navbar .icon {
     margin: 1%;
 }
 .content > img {
+    margin-bottom: 2%;
     max-width: 90%;
 }
 .content > p {
