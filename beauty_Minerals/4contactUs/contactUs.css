@@ -253,7 +253,7 @@ footer {
         display: flex;
         margin-right: auto;
         order: 0;
-        width: 80%;
+        width: 60%;
     }
     navbar.responsive a {
         font-size: 4vw;
