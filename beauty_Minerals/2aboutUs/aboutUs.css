@@ -54,7 +54,6 @@ navbar {
 main navbar .armenian {
     font-style: normal;
     font-weight: bold;
-    font-size: 1vw;
     font-family: mainFontArm;
 }
 main navbar  .russian {
@@ -324,6 +323,13 @@ footer {
         justify-content: flex-end;
         margin-right: 5%;
     }
+    navbar a.icon2 {
+        user-select: none;
+        font-size: 3vw;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 9%;
+    }
     navbar.responsive {
         position: relative;
     }
@@ -335,11 +341,19 @@ footer {
         top: 9%;
         right: 0%;
     }
+     navbar.responsive .icon2 {
+        font-size: 3vw;
+        user-select: none;
+        position: absolute;
+        width: 2.5%;
+        top: 7%;
+        right: 15%;
+    }
     #menuLogo {
         display: flex;
         margin-right: auto;
         order: 0;
-        width: 80%;
+        width: 60%;
     }
     navbar.responsive a {
         font-size: 4vw;

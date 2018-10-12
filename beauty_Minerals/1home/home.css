@@ -47,7 +47,6 @@ navbar {
 main navbar .armenian {
     font-style: normal;
     font-weight: bold;
-    font-size: 1vw;
     font-family: mainFontArm;
 }
 main navbar  .russian {
@@ -364,6 +363,13 @@ footer {
         justify-content: flex-end;
         margin-right: 5%;
     }
+    navbar a.icon2 {
+        user-select: none;
+        font-size: 3vw;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 9%;
+    }
     navbar.responsive {
         position: relative;
     }
@@ -374,6 +380,14 @@ footer {
         width: 2.5%;
         top: 9%;
         right: 0%;
+    }
+    navbar.responsive .icon2 {
+        font-size: 3vw;
+        user-select: none;
+        position: absolute;
+        width: 2.5%;
+        top: 7%;
+        right: 15%;
     }
     .productSection > div {
         width: 130px;
@@ -393,9 +407,10 @@ footer {
         display: flex;
         margin-right: auto;
         order: 0;
-        width: 80%;
+        width: 60%;
     }
-    .content {
+    .content {        
+        overflow-x: scroll;
         width: 20%;
         height: 27%;
     }
