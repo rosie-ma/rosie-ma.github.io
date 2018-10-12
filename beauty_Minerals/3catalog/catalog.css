@@ -385,6 +385,22 @@ footer {
         order: 0;
         width: 60%;
     }
+    .modalContentCaption {
+        width: 44%;
+        height: 6%;
+        top: 2%;
+    }
+    .modalOpenedImg {
+        width: 49%;
+        height: 43%;
+        top: 11%;
+    }
+    .modalContentTitle {
+        width: 44%;
+        height: 76%;
+        top: 12%;
+        left: 0%;
+    }
     #logo {
         height: 7%;
         max-width: 50%;
