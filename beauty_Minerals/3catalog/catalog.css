@@ -217,7 +217,7 @@ footer {
     z-index: 9999;
 }
 .modalShow {
-    margin-top: -5%;
+    margin-top: -10%;
     z-index: 9999;
     justify-content: center;
     align-items: center;
@@ -396,7 +396,7 @@ footer {
     }
     .modalContentTitle {
         width: 44%;
-        height: 76%;
+        height: 60%;
         top: 12%;
         left: 0%;
     }
