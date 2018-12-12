@@ -43,7 +43,7 @@ nav:hover {
     background-color: #d8e8a3;
     background-color: #71803d9c;
 }
-.navbar {
+#navbar {
     display: grid;
     grid-template-areas: 
     "home"
