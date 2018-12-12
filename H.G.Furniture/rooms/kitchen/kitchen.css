@@ -51,7 +51,6 @@ nav:hover {
     "contact"
     "about"
     "downButton";
-    grid-template-rows: 100%;
     grid-template-columns: 100%;
     font-size: 1.5vw;
     grid-row-gap: 15px;
