@@ -1,0 +1,334 @@
+@font-face {
+    font-family: textFont;
+    src: url(../fonts/text.ttf);
+}
+@font-face {
+    font-family: captionFont;
+    src: url(../fonts/headercaption.ttf);
+}
+html, body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: textFont, serif;
+    color: black;
+    background-image: linear-gradient(to bottom, #224492, #5968c1, #7b70ce, #9b78d9, #ba80e3, #d682db, #ec85d2, #fe8bc8, #ff92b1, #ff9ca0, #f8a896, #ecb395);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+header {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 101;
+}
+.headerText {
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.sunContainer {
+    height: 200px;
+    width: 213px;
+    background: url(../images/sun.png) 3% 3% no-repeat;
+    -webkit-animation: slide-right 5s linear 0s infinite alternate;
+    -moz-animation: slide-right 5s linear 0s infinite alternate;
+    -ms-animation: slide-right 5s linear 0s infinite alternate;
+    animation: slide-right 5s linear 0s infinite alternate;
+}
+@-webkit-keyframes slide-right {
+    0% {
+        -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+    }
+    50% {
+        -moz-transform: translate(100px, 0px);
+        -ms-transform: translate(100px, 0px);
+        -webkit-transform: translate(100px, 0px);
+        transform: translate(100px, 0px);
+    }
+    100% {
+        -moz-transform: translate(50px, 50px);
+        -ms-transform: translate(50px, 50px);
+        -webkit-transform: translate(50px, 50px);
+        transform: translate(50px, 50px);
+    }
+}
+@-moz-keyframes slide-right {
+    0% {
+        -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+    }
+    50% {
+        -moz-transform: translate(100px, 0px);
+        -ms-transform: translate(100px, 0px);
+        -webkit-transform: translate(100px, 0px);
+        transform: translate(100px, 0px);
+    }
+    100% {
+        -moz-transform: translate(50px, 50px);
+        -ms-transform: translate(50px, 50px);
+        -webkit-transform: translate(50px, 50px);
+        transform: translate(50px, 50px);
+    }
+}
+@-ms-keyframes slide-right {
+    0% {
+        -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+    }
+    50% {
+        -moz-transform: translate(100px, 0px);
+        -ms-transform: translate(100px, 0px);
+        -webkit-transform: translate(100px, 0px);
+        transform: translate(100px, 0px);
+    }
+    100% {
+        -moz-transform: translate(50px, 50px);
+        -ms-transform: translate(50px, 50px);
+        -webkit-transform: translate(50px, 50px);
+        transform: translate(50px, 50px);
+    }
+}
+@keyframes slide-right {
+    0% {
+        -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+    }
+    50% {
+        -moz-transform: translate(100px, 0px);
+        -ms-transform: translate(100px, 0px);
+        -webkit-transform: translate(100px, 0px);
+        transform: translate(100px, 0px);
+    }
+    100% {
+        -moz-transform: translate(50px, 50px);
+        -ms-transform: translate(50px, 50px);
+        -webkit-transform: translate(50px, 50px);
+        transform: translate(50px, 50px);
+    }
+}
+
+.wave-wrap {
+    align-items: flex-end;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.space {
+    margin: 1vw;
+}
+.wave {
+    font-size: 4vw;
+    font-weight: bold;
+    font-family: captionFont, cursive;
+    text-align: center;
+    color: #5ac5ff;
+}
+.t {
+    animation: wave 1.5s linear infinite;
+}
+.a {
+    animation: wave 1.5s 200ms linear infinite;
+}
+.l {
+    animation: wave 1.5s 400ms linear infinite;
+}
+.i {
+    animation: wave 1.5s 600ms linear infinite;
+}
+.n {
+    animation: wave 1.5s 800ms linear infinite;
+}
+.e {
+    animation: wave 1.5s 1000ms linear infinite;
+}
+.s {
+    animation: wave 1.5s 1200ms linear infinite;
+}
+.u {
+    animation: wave 1.5s 1400ms linear infinite;
+}
+.o {
+    animation: wave 1.5s 1600ms linear infinite;
+}
+.r {
+    animation: wave 1.5s 200ms linear infinite;
+}
+.i {
+    animation: wave 1.5s 400ms linear infinite;
+}
+.n {
+    animation: wave 1.5s 600ms linear infinite;
+}
+.g {
+    animation: wave 1.5s 800ms linear infinite;
+}
+.c {
+    animation: wave 1.5s 1000ms linear infinite;
+}
+.n {
+    animation: wave 1.5s 1200ms linear infinite;
+}
+.t {
+    animation: wave 1.5s 1400ms linear infinite;
+}
+.r {
+    animation: wave 1.5s 1800ms linear infinite;
+}
+
+
+@keyframes wave {
+    25% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    75% {
+        transform: rotate(-10deg);
+    }
+}
+
+.mySlides {display: none}
+.mySlides img {
+    vertical-align: middle;
+    width: 100%;
+    max-width: 50vw;
+    height: auto;
+}
+.slider_bg {
+    top: 10vw;
+    position: absolute;
+    background: url(../images/slider-bg.png) 0 0 no-repeat;
+}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin: 0 -1vw;
+    color: white;
+    font-weight: bold;
+    font-size: 2vw;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    font-size: 2.5vw;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 1.4vw;
+    position: absolute;
+    bottom: 9vw;
+    width: 100%;
+    text-align: center;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
+
+
+.menu {
+    position: absolute;
+    display: flex;
+    top: 29vw;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+    justify-content: space-around;
+    font-family: textFont;
+    font-size: 1.7vw;
+}
+.menu a {
+    transition: 0.6s ease;
+    text-decoration: none;
+}
+.menu a:hover {
+    font-size: 1.9vw;
+}
+.clr_1 {color: #3F51B5;}
+.clr_2 {color: #00BCD4;}
+.clr_3 {color: #4CAF50;}
+.clr_4 {color: #FF9800;}
+.clr_5 {color: #f44336;}
+
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: url(../images/hands.png) -37px bottom repeat-x;
+}
+.about_us_info_container {
+    margin-top: 3vw;
+    width: 70%;
+    display: grid;
+    align-items: center;
+    padding-bottom: 15vw;
+    justify-items: center;  
+}
+h1 {
+    font-size: 1.7vw;
+}
+h2 {
+    font-size: 1vw;
+}
+.about_us_info_container p {
+    font-size: 1vw;
+}
+.about_us_info_container img {
+    width: 100%;
+    max-width: 35vw;
+    height: auto;
+}
