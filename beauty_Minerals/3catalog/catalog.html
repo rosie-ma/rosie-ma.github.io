@@ -55,6 +55,7 @@
         <img class="modalImg" src="images/forBody/201-krem-dlya-nog-protiv-treshchin-smyagchayushchij-dezodoriruyushchij-500x500.jpg" alt="Mountains" />
         <h4><p class="russian">ДЛЯ ТЕЛА</p><p class="armenian">Մարմնի համար</p></h4>
         <h5><p class="russian">КРЕМ ДЛЯ НОГ.<br /><b class="money">2950֏</b></p><p class="armenian">Կրեմ՝ նախատեսված ոտքի համար:<br /><b class="money">2950֏</b></p></h5>
+        <p>
         Крем, в сбалансированную формулу которого, включены масла макадамии, кокоса, Ши, экстракты каштана, мирта и сапонарии, известные своими уникальными свойствами. В сочетании с минералами Мёртвого моря оказывает благоприятное воздействие на кожу ног, уменьшая сетку кровеносных сосудов, повышает эластичность кожи стоп, а также способствует укреплению ногтей.<br /><br />Способ применения: Массирующими движениями, до впитывания, нанести на чисто вымытые, влажные ступни ног.<br /><br /> Ingredients: Ingredients. Water, Soya Oil, Eucalyptus Extract, Glyceryl Stearate SE, Cetyl Alcohol, Caprylic/Capric Triglyceride, Glycerin, Rosemary (Rosmarinus officinalis) Extract, Saponaria Officinalis Extract, Caprylic/Capric Triglyceride, Shea Butter, Castor Oil, Mineral Oil, Bees Wax, Coconut Butter, Phenoxyethanol, Carbopol, Silicon Oil, DMDMH, Xantan Gum, Tocopherol, Walnut (Juglans regia) Oil, Tocopherol, Dimethicone, Dead Sea Salt, Fragrance, Menta Piperita (Peppermint) Oil, Cyclomethicone<br /><br />
         Объём: 100 мл.
         </p></div>
@@ -491,7 +492,6 @@
     </div>
     </div>
 </div>
-</div>
 </aside>    
 </main>
     
@@ -572,7 +572,6 @@ $(function() {
             $(this).addClass('selected');
             $buttonRussian.removeClass('selected');
             $('.modalContentTitle').text($textArmenian);
-
         });
         $buttonRussian.click(function() {
             $(this).addClass('selected');
@@ -608,9 +607,7 @@ function filterSelection (c) {
     removeClass(x[i], 'show');
     if (x[i].className.indexOf(c) > -1) addClass(x[i], 'show');
   }
-
 }
-
 function addClass (element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(' ');
@@ -619,7 +616,6 @@ function addClass (element, name) {
     if (arr1.indexOf(arr2[i]) == -1) {element.className += ' ' + arr2[i];}
   }
 }
-
 function removeClass (element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(' ');
@@ -632,7 +628,6 @@ function removeClass (element, name) {
   element.className = arr1.join(' ');
 }
 }
-
 (function(){
     document.getElementById('myBtnContainer')
     $('#myBtnContainer').on('click', 'button', function() {
