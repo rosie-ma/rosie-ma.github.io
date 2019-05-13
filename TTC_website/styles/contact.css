@@ -1,0 +1,473 @@
+@font-face {
+    font-family: textFont;
+    src: url(../fonts/text.ttf);
+}
+@font-face {
+    font-family: captionFont;
+    src: url(../fonts/headercaption.ttf);
+}
+@font-face {
+    font-family: textCaptionFont;
+    src: url(../fonts/captionnew.ttf);
+}
+html, body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: textFont, serif;
+    color: black;
+    background-image: linear-gradient(to bottom, #224492, #5968c1, #7b70ce, #9b78d9, #ba80e3, #d682db, #ec85d2, #fe8bc8, #ff92b1, #ff9ca0, #f8a896, #ecb395);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+header {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 101;
+}
+.headerText {
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.sunContainer {
+    height: 200px;
+    width: 213px;
+    background: url(../images/sun.png) 3% 3% no-repeat;
+    -webkit-animation: slide-right 5s linear 0s infinite alternate;
+    -moz-animation: slide-right 5s linear 0s infinite alternate;
+    -ms-animation: slide-right 5s linear 0s infinite alternate;
+    animation: slide-right 5s linear 0s infinite alternate;
+}
+@-webkit-keyframes slide-right {
+    0% {
+        -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+    }
+    50% {
+        -moz-transform: translate(100px, 0px);
+        -ms-transform: translate(100px, 0px);
+        -webkit-transform: translate(100px, 0px);
+        transform: translate(100px, 0px);
+    }
+    100% {
+        -moz-transform: translate(50px, 50px);
+        -ms-transform: translate(50px, 50px);
+        -webkit-transform: translate(50px, 50px);
+        transform: translate(50px, 50px);
+    }
+}
+@-moz-keyframes slide-right {
+    0% {
+        -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+    }
+    50% {
+        -moz-transform: translate(100px, 0px);
+        -ms-transform: translate(100px, 0px);
+        -webkit-transform: translate(100px, 0px);
+        transform: translate(100px, 0px);
+    }
+    100% {
+        -moz-transform: translate(50px, 50px);
+        -ms-transform: translate(50px, 50px);
+        -webkit-transform: translate(50px, 50px);
+        transform: translate(50px, 50px);
+    }
+}
+@-ms-keyframes slide-right {
+    0% {
+        -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+    }
+    50% {
+        -moz-transform: translate(100px, 0px);
+        -ms-transform: translate(100px, 0px);
+        -webkit-transform: translate(100px, 0px);
+        transform: translate(100px, 0px);
+    }
+    100% {
+        -moz-transform: translate(50px, 50px);
+        -ms-transform: translate(50px, 50px);
+        -webkit-transform: translate(50px, 50px);
+        transform: translate(50px, 50px);
+    }
+}
+@keyframes slide-right {
+    0% {
+        -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+    }
+    50% {
+        -moz-transform: translate(100px, 0px);
+        -ms-transform: translate(100px, 0px);
+        -webkit-transform: translate(100px, 0px);
+        transform: translate(100px, 0px);
+    }
+    100% {
+        -moz-transform: translate(50px, 50px);
+        -ms-transform: translate(50px, 50px);
+        -webkit-transform: translate(50px, 50px);
+        transform: translate(50px, 50px);
+    }
+}
+
+.wave-wrap {
+    align-items: flex-end;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.space {
+    margin: 1vw;
+}
+.wave {
+    font-size: 4vw;
+    font-weight: bold;
+    font-family: captionFont, cursive;
+    text-align: center;
+    color: #5ac5ff;
+}
+.t {
+    animation: wave 1.5s linear infinite;
+}
+.a {
+    animation: wave 1.5s 200ms linear infinite;
+}
+.l {
+    animation: wave 1.5s 400ms linear infinite;
+}
+.i {
+    animation: wave 1.5s 600ms linear infinite;
+}
+.n {
+    animation: wave 1.5s 800ms linear infinite;
+}
+.e {
+    animation: wave 1.5s 1000ms linear infinite;
+}
+.s {
+    animation: wave 1.5s 1200ms linear infinite;
+}
+.u {
+    animation: wave 1.5s 1400ms linear infinite;
+}
+.o {
+    animation: wave 1.5s 1600ms linear infinite;
+}
+.r {
+    animation: wave 1.5s 200ms linear infinite;
+}
+.i {
+    animation: wave 1.5s 400ms linear infinite;
+}
+.n {
+    animation: wave 1.5s 600ms linear infinite;
+}
+.g {
+    animation: wave 1.5s 800ms linear infinite;
+}
+.c {
+    animation: wave 1.5s 1000ms linear infinite;
+}
+.n {
+    animation: wave 1.5s 1200ms linear infinite;
+}
+.t {
+    animation: wave 1.5s 1400ms linear infinite;
+}
+.r {
+    animation: wave 1.5s 1800ms linear infinite;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    background: url(../images/hands.png) -37px bottom repeat-x;
+}
+@keyframes wave {
+    25% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    75% {
+        transform: rotate(-10deg);
+    }
+}
+
+.mySlides {display: none}
+.mySlides img {
+    vertical-align: middle;
+    width: 100%;
+    max-width: 50vw;
+    height: auto;
+}
+.slider_bg {
+    top: 10vw;
+    position: absolute;
+    background: url(../images/slider-bg.png) 0 0 no-repeat;
+}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin: 0 -1vw;
+    color: white;
+    font-weight: bold;
+    font-size: 2vw;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    font-size: 2.5vw;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 1.4vw;
+    position: absolute;
+    bottom: 9vw;
+    width: 100%;
+    text-align: center;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
+
+
+.menu {
+    position: absolute;
+    display: flex;
+    top: 29vw;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+    justify-content: space-around;
+    font-family: textFont;
+    font-size: 1.7vw;
+}
+.menu a {
+    transition: 0.6s ease;
+    text-decoration: none;
+}
+.menu a:hover {
+    font-size: 1.9vw;
+}
+.clr_1 {color: #3F51B5;}
+.clr_2 {color: #00BCD4;}
+.clr_3 {color: #4CAF50;}
+.clr_4 {color: #FF9800;}
+.clr_5 {color: #f44336;}
+.grid-container { 
+    display: grid;
+    grid-template-areas: 
+        "section section nav";
+    grid-template-rows: 100% auto auto auto;
+    grid-template-columns: 20% 68%;
+    height: 100%;
+}
+
+section {
+    grid-area: section;
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    display: grid;
+    justify-content: center;
+    margin: 4vw 0 15vw 0;
+    grid-template-columns: 2fr 10fr;
+}
+.map {
+    grid-row: 2;
+    grid-column: 2;
+    width: 76%;
+    box-shadow: 0 0 40px -10px black;
+    background: rgb(240, 240, 240);
+    display: grid;
+    grid-template-columns: 32% 68%;
+}
+.mapText {
+    float: left;
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: 70% 30%;
+    border-right: 1px solid #c67fdf;
+}
+.textPart {
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: 20% 45%;
+    padding: 2.5vw 2vw 0vw 2.7vw;
+}
+#map {
+    height: 100%;
+    float: left;
+    grid-column: 2;
+}
+marker {
+    height: 100px;
+    width: 100px;
+}
+.textPart > h1 {
+    padding-bottom: 15px;
+    font-weight: 600;
+    color: #d0437b;
+    font-size: 2.1vw;
+    grid-row: 1;
+}
+.textPart > p {
+    font-size: 1.1vw;
+    margin-bottom: 30px;
+    text-align: left;
+    grid-row: 2;
+}
+.det {
+    font-size: 0.9vw;
+    margin-bottom: 15px;
+}
+.det1{
+    grid-row: 3;
+}
+.det2{
+    grid-row: 4;
+}
+.det3{
+    grid-row: 5;`   
+}
+i {
+    float: left;
+    font-size: 1.2vw;
+    margin: 0 10px 0 0;
+}
+center  div {
+    margin: 2vw 0;
+    padding: 0.5vw 0.5vw;
+    cursor: pointer;
+    background: none;
+    color: #546973;
+    border: 0.17vw solid #f99ba0;
+    transition: all 0.3s;
+    border-radius: 8px;
+    outline: 0;
+}
+center  button:hover {
+    border-color: rgb(90, 90, 90);
+    color: rgb(90, 90, 90)
+}
+center  .facebook:after {
+    content: 'F-book';
+    font-family: sans-serif;
+    display: block;
+    font-size: 0.8vw;
+    margin-top: 0.7vw;
+}
+center  .gmail:after {
+    content: 'GMail';
+    font-family: sans-serif;
+    display: block;
+    font-size: 0.8vw;
+    margin-top: 0.7vw;
+    font-weight: normal;
+}
+center  .viber:after {
+    content: 'Viber';
+    font-family: sans-serif;
+    display: block;
+    font-size: 0.8vw;
+    margin-top: 0.7vw;
+}
+center  .whatsapp:after {
+    content: 'Whatsapp';
+    font-family: sans-serif;
+    display: block;
+    font-size: 0.8vw;
+    margin-top: 0.7vw;
+}
+@media screen and (max-width: 500px) {
+    section {
+        margin: 4vw 0 25vw 0;
+    }
+    .navbar {
+        grid-row-gap: 5px;
+    }
+    .section {
+        grid-template-rows: 7% 107%;
+    }
+    .grid-container {
+        grid-template-columns: 20% 68%;
+    }
+    .map {
+        grid-template-columns: unset;
+        grid-template-rows: 75% 56%;
+    }
+    .mapText {
+        grid-column: unset;
+        grid-template-rows: 14% 49%;
+    }
+    .textPart {
+        display: block;
+        grid-template-rows: 20% 45%;
+    }
+    .webs {
+        display: block;
+        padding-left: 36%;
+    }
+    #map {
+        height: 138%;
+        grid-column: unset;
+    }
+    .downButton {
+        display: none;
+    }
+}
