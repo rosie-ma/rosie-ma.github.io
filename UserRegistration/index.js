@@ -96,16 +96,6 @@ submit.onclick = function CreateRow(options) {
         containTbodyFirst = document.getElementsByClassName('userInfoTbodyFirst')[0],
         containTbodySecond = document.getElementsByClassName('userInfoTbodySecond')[0];
 
-if (( nameInput.value == "") || (surnameInput.value == "") || (positionInput.value == "") || (monthInput.value == "") || (salaryInput.value == "") || (yearInput.value == "") || (dayInput.value == "")) {
-    nameInput.value = "";
-    surnameInput.value = "";
-    positionInput.value = "";
-    salaryInput.value = "";
-    monthInput.value = "";
-    dayInput.value = "";
-    yearInput.value = ""; 
-    return;
-}
     
     var row = document.createElement('tr');
     row.id = 'tableRow' + id;
