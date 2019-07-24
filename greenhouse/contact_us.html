@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name=viewport content="width=device-width, initial-scale=1.0">
+        <!--        <link rel="shortcut icon" type=image/png href="{% static 'cr_page/images/favIcon.png' %}"/>-->
+        <link rel=stylesheet type=text/css href="styles/contact_us.css" />
+        <script src="styles/home.js" async> </script>
+        <title></title>
+    </head>
+    <body>
+        <main>
+            <nav id="contact_nav">
+                <a href="" class="logo">CSS Nav</a>
+                <input class="menu_btn" type="checkbox" id="menu_btn" />
+                <label class="menu_icon" for="menu_btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Product</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="our_team.html">Our Team</a></li>
+                    <li><a href="distributor.html">Distributor</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <header>
+                <!--                <h1>Our team</h1>-->
+            </header>
+            <section id="contact_section">
+                <div id="contact_header_container">
+                    <h1>
+                        Contact Us
+                    </h1>
+                    <h2>
+                        We’d love to hear from you and answer any questions you may have! Send us a message using the form and we’ll respond as soon as we can.
+                    </h2>
+                </div>
+                <div id="form_info_seperator">
+                    <form action="https://formspree.io/rosiemanukyan98@gmail.com" method="POST" >
+                        <div class="main_section">
+                            <div class="login">
+                                <input type="text" name="From" placeholder="Your Name" class="input">
+                                <input type="text" name="E-mail" placeholder="Your Email Address" class="input">
+                            </div>
+                            <div class="subject">
+                                <input type="text" name="Subject:" placeholder="Subject" class="input">
+                            </div>
+                            <div class="msg">
+                                <textarea name="Massage" class="area" rows='8' placeholder="Leave Your Message"></textarea>
+                            </div>
+                            <button class="send_button">Send Massage</button>
+                        </div>
+                    </form>
+                    <div id="contact_method_container">
+                        <div class="contact_method">
+                            <div>Phone:</div>
+                            <p>(800) 123-4567</p>
+                        </div>
+                        <div class="contact_method">
+                            <div>E-Mal:</div>
+                            <p>info@yoursite.com</p>
+                        </div>
+                        <div class="contact_method">
+                            <div>Address:</div>
+                            <p>Yerevan, Armenia<br/> plantaciayi hascen</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <aside>
+                <div id="map"></div>
+            </aside>
+            <footer>
+                <div id="footer_container">
+                    <div class="footer_section_container">
+                        <h2>Menu</h2>
+                        <ul>
+                            <a href="#"><li>Home</li></a>
+                            <a href="#"><li>Product</li></a>
+                            <a href="#"><li>About Us</li></a>
+                            <a href="#"><li>Our Team</li></a>
+                            <a href="#"><li>Contact Us</li></a>
+                        </ul>
+                    </div>
+                    <div class="footer_section_container">
+                        <h2>Fruits</h2>
+                        <ul>
+                            <a href="#"><li>Apricot</li></a>
+                            <a href="#"><li>Apple</li></a>
+                            <a href="#"><li>Orange</li></a>
+                            <a href="#"><li>Peach</li></a>
+                            <a href="#"><li>Banana</li></a>
+                            <a href="#"><li>Cherry</li></a>
+                        </ul>
+                    </div>
+                    <div class="footer_section_container">
+                        <h2>Products</h2>
+                        <ul>
+                            <a href="#"><li>Fruits</li></a>
+                            <a href="#"><li>Fruit Vodka</li></a>
+                            <a href="#"><li>Dried Fruits & Chips</li></a>
+                            <a href="#"><li>Natural Juices & Compotes</li></a>
+                        </ul>
+                    </div>
+                    <div class="footer_section_container">
+                        <h2>Follow us on...</h2>
+                        <ul>
+                            <a href="#"><li>Facebook</li></a>
+                            <a href="#"><li>Twiter</li></a>
+                            <a href="#"><li>Instagram</li></a>
+                            <a href="#"><li>Natural Juices & Compotes</li></a>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </body>
+    <script>
+        function initMap() {    
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 40.177984, lng: 44.507123},
+                zoom: 15,
+
+            });
+            var marker = new google.maps.Marker({
+                position: {lat: 40.177984, lng: 44.507123},
+                map: map,
+            });
+
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPPykV4AFypNzytGYGBLkMolumXsgM-9c&callback=initMap"
+            async defer></script>
+    <script>
+        window.onscroll = () => {
+            var contactnav = document.querySelector('#contact_nav');
+            if(this.scrollY <= 150) contactnav.className = '';
+            else contactnav.className = 'scroll';
+        };
+    </script>
+</html>
