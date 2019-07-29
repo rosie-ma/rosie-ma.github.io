@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name=viewport content="width=device-width, initial-scale=1.0">
+        <!--        <link rel="shortcut icon" type=image/png href="{% static 'cr_page/images/favIcon.png' %}"/>-->
+        <link rel=stylesheet type=text/css href="styles/about_us.css" />
+        <title>About US</title>
+    </head>
+    <body>
+        <main>
+            <nav id="about_nav">
+                <a href="" class="logo">CSS Nav</a>
+                <input class="menu_btn" type="checkbox" id="menu_btn" />
+                <label class="menu_icon" for="menu_btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Product</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="our_team.html">Our Team</a></li>
+                    <li><a href="distributor.html">Distributor</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <header>
+                <!--                <h1>About Us</h1>-->
+            </header>
+            <section id="video_section">
+                <video controls>
+                    <source src="images/about_us/video1.mp4" type="video/mp4">
+                </video>
+                <video controls>
+                    <source src="images/about_us/video2.mp4" type="video/mp4">
+                </video>
+                <video controls>
+                    <source src="images/about_us/video3.mp4" type="video/mp4">
+                </video>
+                <video controls>
+                    <source src="images/about_us/video4.mp4" type="video/mp4">
+                </video>
+            </section>
+            <article id="our_mission">
+                <div>
+                    <h1>Our Mission</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor facilisis eleifend. Quisque elementum tellus vitae ipsum cursus molestie. Mauris vitae erat eget justo bibendum. Donec vitae libero non risus viverra vestibulum consectetur et a ero.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor facilisis eleifend. Quisque elementum tellus vitae ipsum cursus molestie. Mauris vitae erat eget justo bibendum. Donec vitae libero non risus viverra vestibulum consectetur et a ero</p>
+                </div>
+            </article>
+            <section id="our_story">
+                <div>
+                    <h1>Our Story</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor facilisis eleifend. Quisque elementum tellus vitae ipsum cursus molestie. Mauris vitae erat eget justo bibendum. Donec vitae libero non risus viverra vestibulum consectetur et a eros.
+                        Nulla condimentum risus ut dui porttitor elementum. Duis tincidunt sollicitudin erat sit amet malesuada. Curabitur luctus tellus at leo malesuada sagittis. Nunc non vehicula augue.
+                    </p>
+                </div>
+            </section>
+            <section id="experience">
+                <div id="experience_container">
+                    <div class="experience_box">
+                        <div id="experience_year" class="experience_img"></div>
+                        <h1>12</h1>
+                        <p>Years in Business</p>
+                    </div>
+                    <div class="experience_box">
+                        <div id="experience_deliverie" class="experience_img"></div>
+                        <h1>374</h1>
+                        <p>Fruit Deliveries</p>
+                    </div>
+                    <div class="experience_box">
+                        <div id="experience_order" class="experience_img"></div>
+                        <h1>91</h1>
+                        <p>Online Orders</p>
+                    </div>
+                    <div class="experience_box">
+                        <div id="experience_customer" class="experience_img"></div>
+                        <h1>199</h1>
+                        <p>Happy Customers</p>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div id="footer_container">
+                    <div class="footer_section_container">
+                        <h2>Menu</h2>
+                        <ul>
+                            <a href="#"><li>Home</li></a>
+                            <a href="#"><li>Product</li></a>
+                            <a href="#"><li>About Us</li></a>
+                            <a href="#"><li>Our Team</li></a>
+                            <a href="#"><li>Contact Us</li></a>
+                        </ul>
+                    </div>
+                    <div class="footer_section_container">
+                        <h2>Fruits</h2>
+                        <ul>
+                            <a href="#"><li>Apricot</li></a>
+                            <a href="#"><li>Apple</li></a>
+                            <a href="#"><li>Orange</li></a>
+                            <a href="#"><li>Peach</li></a>
+                            <a href="#"><li>Banana</li></a>
+                            <a href="#"><li>Cherry</li></a>
+                        </ul>
+                    </div>
+                    <div class="footer_section_container">
+                        <h2>Products</h2>
+                        <ul>
+                            <a href="#"><li>Fruits</li></a>
+                            <a href="#"><li>Fruit Vodka</li></a>
+                            <a href="#"><li>Dried Fruits & Chips</li></a>
+                            <a href="#"><li>Natural Juices & Compotes</li></a>
+                        </ul>
+                    </div>
+                    <div class="footer_section_container">
+                        <h2>Follow us on...</h2>
+                        <ul>
+                            <a href="#"><li>Facebook</li></a>
+                            <a href="#"><li>Twiter</li></a>
+                            <a href="#"><li>Instagram</li></a>
+                            <a href="#"><li>Natural Juices & Compotes</li></a>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </body>
+    <script>
+        window.onscroll = () => {
+            var aboutnav = document.querySelector('#about_nav');
+            if(this.scrollY <= 150) aboutnav.className = '';
+            else aboutnav.className = 'scroll';
+        };
+    </script>
+</html>
