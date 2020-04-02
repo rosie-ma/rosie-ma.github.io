@@ -1,3 +1,8 @@
+@font-face {
+    font-family: armenian_font;
+    src: url(../font/armenian_font.ttf);
+}
+
 ::-moz-selection {
     color: #fff;
     background: #305e6c;
@@ -20,9 +25,10 @@ html {
 }
 
 body {
+    font-family: armenian_font;
     min-height: 100%;
     font-size: 1em;
-    color: var(--main-blue);
+    color: #0a2229;
 }
 
 nav {
@@ -91,4 +97,30 @@ nav {
 
 .dropdown:hover .dropdown_content {
     display: grid;
+}
+
+.text_with_info_area {
+    width: 90%;
+    display: grid;
+    grid-gap: 2em;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-items: center;
+    margin: 2em auto;
+}
+
+.color_highlighter_brown {
+    color: var(--main-brown);
+}
+
+footer {
+    height: 40vw;
+}
+
+.horizontal_line {
+    height: 1px;
+    width: 100%;
+    background-color: grey;
+    margin: 5em 0;
 }

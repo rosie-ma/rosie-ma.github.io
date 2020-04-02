@@ -150,7 +150,7 @@ header {
 #header_information_container {
     z-index: 3;
     width: 75%;
-    height: 60%;
+    height: 50%;
     display: grid;
     grid-template-columns: 7fr 6fr;
     position: absolute;
@@ -175,7 +175,7 @@ header {
     padding: .6em 0;
     width: 75%;
     font-size: 1.1em;
-    border: 1px solid #18353f;
+    border: 1px solid #ad9888;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     text-decoration: none;
@@ -208,3 +208,29 @@ header {
 }
 
 /*section of layer 3 info*/
+/*how can we help you section*/
+#help_notes_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3%;
+    margin-top: 3em;
+}
+
+.help_block h4 {
+    margin-bottom: 2em;
+}
+
+.help_block p {
+    color: #9E9E9E;
+    font-size: 1.1em;
+}
+
+.how_we_help_icon {
+    width: 100%;
+    max-width: 70px;
+    padding: .5% 2%;
+    height: auto;
+    margin-bottom: 2em;
+}
+
+/*how can we help you section*/
