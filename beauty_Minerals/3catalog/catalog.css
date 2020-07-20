@@ -95,13 +95,13 @@ navbar .icon {
  .row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 1%;
     width: 100%;
     align-content: center;
     justify-items: center;
 }
 .row > .column {
     width: 90%;
+	    padding: 4% 0 4% 0;
 }
 .column {
     float: left;
@@ -131,7 +131,7 @@ navbar .icon {
 #myBtnContainer {
     display: flex;
     justify-content: flex-end;
-    margin: 4% 0 0 2%;
+    margin: 1% 0 1% 2%;
 }
 .btn {
     font-family: mainFont;
