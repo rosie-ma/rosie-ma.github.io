@@ -22,6 +22,7 @@ html, body {
     height: 100%;
 }
 main {
+    height: 89%;
     background-color: #3b3a36;
     position: relative;
 }
@@ -85,10 +86,11 @@ navbar .icon {
 
 .allContentContainer {
     display: flex;
+    height: 87%;
     justify-content: center;
 }
 .contactContainer {
-    display: flex;
+display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
@@ -96,8 +98,9 @@ navbar .icon {
 }
 .contactContentContainer {
     display: flex;
-    justify-content: center;
+    justify-content: inherit;
     align-items: center;
+    height: 80%;
     flex-wrap: wrap;
 }
 .contactSection {
