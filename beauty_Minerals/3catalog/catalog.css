@@ -92,21 +92,18 @@ navbar .icon {
     position: relative;
     display: flex;
 }
-   .row { display: grid;
+ .row {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 1%;
-    justify-content: center;
     width: 100%;
-    /* align-items: center; */
-    text-align: center;
     align-content: center;
     justify-items: center;
-    height: 100%;
 }
 .row > .column {
     width: 90%;
 }
-	.column {
+.column {
     float: left;
     width: 23%;
     display: none;
