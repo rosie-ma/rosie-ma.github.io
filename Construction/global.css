@@ -1,0 +1,47 @@
+@font-face {
+    font-family: arm-font;
+    src: url(./font/gayane_Reg.otf);
+}
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    --scroll-behavior: smooth!important;
+    scroll-behavior: smooth!important;
+}
+
+body {
+    height: 100%;
+    font-family: "arm-font", sans-serif;
+}
+
+
+:root {
+    --dark-accent: #6b705c;
+    --active-accent: #faeddd;
+    --main-color: #f0efeb;
+    --light-acent: #b7b7a4;
+}
+
+.main-width {
+    width: 60%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .main-width {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .main-width {
+        width: 90%;
+    }
+}
